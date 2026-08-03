@@ -5,144 +5,182 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mentions légales – Bird Hunter</title>
 
-  <meta name="robots" content="noindex" />
-  <link rel="icon" type="image/png" href="imagesbirdhunter/png/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="description" content="Mentions légales du site Bird Hunter, domaine de chasse privée à Tournay (Hautes-Pyrénées)." />
+  <meta name="theme-color" content="#424D2D" />
 
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html,body{overflow-x:hidden}
-    body{font-family:'Open Sans',sans-serif;line-height:1.7;color:#1C1C1C;background:#FFFFFF;padding-top:80px}
-    h1,h2,h3{font-family:'Playfair Display',serif;color:#424D2D}
-    h1{font-size:2.2rem;margin:0 0 1rem}
-    h2{font-size:1.4rem;margin:2rem 0 1rem}
-    h3{font-size:1.1rem;margin:1rem 0 .5rem}
-    a{text-decoration:none;color:inherit}
-    .container{width:90%;max-width:1000px;margin:0 auto}
-    p:not(.center-btn){text-align:justify;text-justify:inter-word;text-align-last:left;hyphens:auto;-webkit-hyphens:auto}
-    ul{padding-left:1.2rem}
-    li{margin:.4rem 0}
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-    /* Header identique */
-    header{position:fixed;top:0;left:0;width:100%;background:#424D2D;padding:15px 0;box-shadow:0 2px 5px rgba(0,0,0,.1);z-index:1000}
-    .header-content{display:flex;justify-content:space-between;align-items:center;width:90%;max-width:1200px;margin:0 auto}
-    .logo{margin-left:10px}
-    .logo img{height:60px;width:auto;display:block}
-    .menu-toggle{display:none;background:none;border:none;font-size:1.8rem;cursor:pointer;color:#FFF}
-    nav{margin-left:auto}
-    .nav-links{list-style:none;display:flex;gap:20px}
-    .nav-links a{padding:5px 10px;font-weight:600;transition:color .3s;color:#FFF}
-    .nav-links a:hover{color:#f5f0e3}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    main{padding:60px 0 80px;background:#F5F0E3}
-    .card{background:#FFF;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.08);padding:24px}
-
-    footer{background:#3B5A3D;color:#FFF;padding:20px 0}
-    .footer-content{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
-    .footer-links a{margin:0 10px;color:#FFF}
-
-    @media (max-width:768px){
-      .menu-toggle{display:block}
-      nav{position:absolute;top:100%;right:0;background:#FFFFFF;box-shadow:0 2px 5px rgba(0,0,0,.1);display:none}
-      nav.open{display:block;background-color:#424D2D!important}
-      .nav-links{flex-direction:column;padding:10px 20px;gap:10px}
-      nav.open .nav-links a{color:#FFF!important}
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
-  <!-- Header identique -->
-  <header>
-    <div class="header-content">
-      <div class="logo">
-        <a href="index.html#accueil"><img src="imagesbirdhunter/logo.jpg" alt="Bird Hunter Domaine de Chasse" /></a>
+
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<!-- ===== En-tête (identique à la page d'accueil) ===== -->
+<header class="entete">
+  <div class="container entete-inner">
+
+    <a class="logo" href="index.html" aria-label="Bird Hunter, retour à l'accueil">
+      <img src="imagesbirdhunter/logo.jpg" alt="Logo Bird Hunter" width="60" height="60" />
+      <span class="logo-texte">
+        <span class="nom">Bird Hunter</span>
+        <span class="lieu">Tournay · Hautes-Pyrénées</span>
+      </span>
+    </a>
+
+    <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-principal">
+      <span></span>
+    </button>
+
+    <nav class="nav-principale" id="menu-principal" aria-label="Menu principal">
+      <ul class="nav-liste">
+        <li><a href="index.html#domaine">Le Domaine</a></li>
+        <li><a href="index.html#offres">Nos Offres</a></li>
+        <li><a href="index.html#journee">La Journée</a></li>
+        <li><a href="index.html#bergerie">Bergerie</a></li>
+        <li><a href="index.html#avis">Avis</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="tel-entete" href="tel:+33609276288">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 3a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
+      06 09 27 62 88
+    </a>
+
+  </div>
+</header>
+
+
+<main id="contenu" class="page-legale">
+  <div class="container">
+
+    <h1 style="margin-bottom:.6rem">Mentions légales</h1>
+    <p class="legal-maj">Dernière mise à jour : <span data-maj></span></p>
+
+    <div class="legal-carte">
+
+      <h2>1. Éditeur du site</h2>
+      <p><strong>Nom / Dénomination :</strong> <em>Bird Hunter – Société civile d'exploitation agricole / Romain Corroyer</em></p>
+      <p><strong>Adresse :</strong> PE DE CASTERA, 65190 OZON</p>
+      <p><strong>Téléphone :</strong> <a href="tel:+33609276288">06 09 27 62 88</a></p>
+      <p><strong>Email :</strong> <a href="mailto:birdhunterdu65@gmail.com">birdhunterdu65@gmail.com</a></p>
+      <p><strong>Directeur de la publication :</strong> <em>Romain Corroyer</em></p>
+      <p><strong>SIREN / SIRET :</strong> <em>940680895</em> — <strong>RCS / RM :</strong> <em>940 680 895 R.C.S. Tarbes)</em> — <strong>TVA intracommunautaire :</strong> <em>FR66940680895</em></p>
+
+      <h2>2. Hébergeur</h2>
+      <p><strong>Hébergeur :</strong> GitHub Pages – GitHub, Inc.</p>
+      <p><strong>Adresse :</strong> 88 Colin P. Kelly Jr St, San Francisco, CA 94107, USA</p>
+      <p><strong>Site :</strong> <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a></p>
+
+      <h2>3. Activité</h2>
+      <p>Site d’information relatif à un <strong>domaine de chasse privée</strong> situé à Tournay (65). Les offres et informations présentées n’ont pas de valeur contractuelle et peuvent évoluer à tout moment.</p>
+
+      <h2>4. Propriété intellectuelle</h2>
+      <p>L’ensemble des contenus du site (textes, images, logos, graphismes, photos, vidéos, icônes, architecture) est protégé par le droit d’auteur. Toute reproduction ou représentation, totale ou partielle, sans autorisation préalable est interdite.</p>
+      <p>Les photographies d’illustration proviennent de banques d’images libres de droit (Unsplash) et sont utilisées conformément à leur licence.</p>
+
+      <h2>5. Responsabilités</h2>
+      <p>Bird Hunter s’efforce de fournir des informations exactes et à jour, sans garantie d’exhaustivité. L’éditeur ne saurait être tenu responsable des erreurs, omissions ou indisponibilités temporaires du site. Les liens externes n’engagent pas la responsabilité de l’éditeur.</p>
+
+      <h2>6. Données personnelles (RGPD)</h2>
+      <p><strong>Responsable de traitement :</strong> Bird Hunter – <a href="mailto:birdhunterdu65@gmail.com">birdhunterdu65@gmail.com</a></p>
+      <p><strong>Données collectées :</strong> essentiellement celles transmises via le formulaire de contact (nom, email, téléphone, message) et, le cas échéant, celles liées aux échanges (réservations, demandes).</p>
+      <p><strong>Finalités :</strong> répondre aux demandes, gestion des échanges et du suivi commercial.</p>
+      <p><strong>Base légale :</strong> exécution de mesures précontractuelles et intérêt légitime (gestion des demandes).</p>
+      <p><strong>Sous-traitant technique :</strong> les messages envoyés depuis le formulaire de contact transitent par le service <a href="https://web3forms.com" target="_blank" rel="noopener">Web3Forms</a>, qui les transmet par e-mail à l’éditeur.</p>
+      <p><strong>Durées de conservation :</strong> le temps nécessaire au traitement de la demande puis archivage interne limité.</p>
+      <p><strong>Destinataires :</strong> l’éditeur et ses personnels habilités, prestataires techniques si besoin.</p>
+      <p><strong>Vos droits :</strong> accès, rectification, effacement, opposition, limitation, portabilité. Pour les exercer : <a href="mailto:birdhunterdu65@gmail.com">birdhunterdu65@gmail.com</a>. Vous pouvez également saisir la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>).</p>
+
+      <h2>7. Cookies</h2>
+      <p><em>À vérifier selon votre site.</em> À date, le site n’implémente que des cookies techniques nécessaires au fonctionnement. <strong>Si vous ajoutez des outils de mesure d’audience (ex : Google Analytics) ou des services tiers embarqués, il faudra mettre en place un bandeau de consentement et compléter cette section.</strong></p>
+
+      <h2>8. Médiation de la consommation (si B2C)</h2>
+      <p><em>Section à compléter par l’éditeur avec les coordonnées du médiateur de la consommation retenu.</em></p>
+
+      <h2>9. Droit applicable</h2>
+      <p>Le présent site est soumis au droit français. Les juridictions compétentes sont celles du ressort de <em>Tournay</em>.</p>
+
+    </div>
+
+    <p style="margin-top:2rem;text-align:center">
+      <a href="index.html" class="btn btn-vert">Retour à l’accueil</a>
+    </p>
+
+  </div>
+</main>
+
+
+<!-- ===== Pied de page ===== -->
+<footer class="pied">
+  <div class="container">
+    <div class="pied-grille">
+
+      <div>
+        <div class="pied-logo">
+          <img src="imagesbirdhunter/logo.jpg" alt="Logo Bird Hunter" width="56" height="56" loading="lazy" />
+          <span class="nom">Bird Hunter</span>
+        </div>
+        <p>Domaine de chasse privée au petit gibier, sur 120 hectares à Tournay, dans les Hautes-Pyrénées.</p>
+        <div class="reseaux">
+          <a href="https://www.facebook.com/people/Bird-Hunter/61558949325470/" target="_blank" rel="noopener" aria-label="Page Facebook de Bird Hunter">
+            <img src="imagesbirdhunter/facebook.png" alt="" width="24" height="24" loading="lazy" />
+          </a>
+        </div>
       </div>
-      <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html#accueil">Accueil</a></li>
+
+      <div>
+        <h4>Nous joindre</h4>
+        <p>Chem. de la Lande<br />65190 Tournay</p>
+        <p><a href="tel:+33609276288">06 09 27 62 88</a></p>
+        <p><a href="mailto:birdhunterdu65@gmail.com">birdhunterdu65@gmail.com</a></p>
+      </div>
+
+      <div>
+        <h4>Le site</h4>
+        <ul class="pied-liens">
           <li><a href="index.html#domaine">Le Domaine</a></li>
           <li><a href="index.html#offres">Nos Offres</a></li>
-          <li><a href="index.html#organisation">Organisation</a></li>
-          <li><a href="index.html#entrainement">Entraînement & Migrateurs</a></li>
           <li><a href="index.html#bergerie">Bergerie</a></li>
-          <li><a href="index.html#avis">Avis</a></li>
           <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <h1>Mentions légales</h1>
-      <p style="margin-bottom:1rem">Dernière mise à jour : <span id="maj"></span></p>
-
-      <div class="card">
-        <h2>1. Éditeur du site</h2>
-        <p><strong>Nom / Dénomination :</strong> <em>Bird Hunter – Société civile d'exploitation agricole / Romain Corroyer</em></p>
-        <p><strong>Adresse :</strong> PE DE CASTERA, 65190 OZON </p>
-        <p><strong>Téléphone :</strong> <a href="tel:+33609276288">06 09 27 62 88</a></p>
-        <p><strong>Email :</strong> <a href="mailto:birdhunterdu65@gmail.com">birdhunterdu65@gmail.com</a></p>
-        <p><strong>Directeur de la publication :</strong> <em>Romain Corroyer</em></p>
-        <p><strong>SIREN / SIRET :</strong> <em>940680895</em> — <strong>RCS / RM :</strong> <em>940 680 895 R.C.S. Tarbes)</em> — <strong>TVA intracommunautaire :</strong> <em>FR66940680895</em></p>
-
-        <h2>2. Hébergeur</h2>
-        <p><strong>Hébergeur :</strong> GitHub Pages – GitHub, Inc.</p>
-        <p><strong>Adresse :</strong> 88 Colin P. Kelly Jr St, San Francisco, CA 94107, USA</p>
-        <p><strong>Site :</strong> <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a></p>
-
-        <h2>3. Activité</h2>
-        <p>Site d’information relatif à un <strong>domaine de chasse privée</strong> situé à Tournay (65). Les offres et informations présentées n’ont pas de valeur contractuelle et peuvent évoluer à tout moment.</p>
-
-        <h2>4. Propriété intellectuelle</h2>
-        <p>L’ensemble des contenus du site (textes, images, logos, graphismes, photos, vidéos, icônes, architecture) est protégé par le droit d’auteur. Toute reproduction ou représentation, totale ou partielle, sans autorisation préalable est interdite.</p>
-
-        <h2>5. Responsabilités</h2>
-        <p>Bird Hunter s’efforce de fournir des informations exactes et à jour, sans garantie d’exhaustivité. L’éditeur ne saurait être tenu responsable des erreurs, omissions ou indisponibilités temporaires du site. Les liens externes n’engagent pas la responsabilité de l’éditeur.</p>
-
-        <h2>6. Données personnelles (RGPD)</h2>
-        <p><strong>Responsable de traitement :</strong> Bird Hunter – <a href="mailto:birdhunterdu65@gmail.com">birdhunterdu65@gmail.com</a></p>
-        <p><strong>Données collectées :</strong> essentiellement celles transmises via le formulaire de contact (nom, email, message) et, le cas échéant, celles liées aux échanges (réservations, demandes).</p>
-        <p><strong>Finalités :</strong> répondre aux demandes, gestion des échanges et du suivi commercial.</p>
-        <p><strong>Base légale :</strong> exécution de mesures précontractuelles et intérêt légitime (gestion des demandes).</p>
-        <p><strong>Durées de conservation :</strong> le temps nécessaire au traitement de la demande puis archivage interne limité.</p>
-        <p><strong>Destinataires :</strong> l’éditeur et ses personnels habilités, prestataires techniques si besoin.</p>
-        <p><strong>Vos droits :</strong> accès, rectification, effacement, opposition, limitation, portabilité. Pour les exercer : <a href="mailto:birdhunterdu65@gmail.com">birdhunterdu65@gmail.com</a>. Vous pouvez également saisir la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>).</p>
-
-        <h2>7. Cookies</h2>
-        <p><em>À vérifier selon votre site.</em> À date, le site n’implémente que des cookies techniques nécessaires au fonctionnement. <strong>Si vous ajoutez des outils de mesure d’audience (ex : Google Analytics) ou des services tiers embarqués, il faudra mettre en place un bandeau de consentement et compléter cette section.</strong></p>
-
-        <h2>8. Médiation de la consommation (si B2C)</h2>
-      
-        <h2>9. Droit applicable</h2>
-        <p>Le présent site est soumis au droit français. Les juridictions compétentes sont celles du ressort de <em>Tournay</em>.</p>
       </div>
+
     </div>
-  </main>
 
-  <footer>
-    <div class="container footer-content">
-      <p>&copy; <span id="year"></span> Bird Hunter - Domaine de Chasse Privée</p>
-      <div class="footer-links">
-        <a href="mentions-legales.html">Mentions légales</a>
-        <a href="https://www.facebook.com/people/Bird-Hunter/61558949325470/" target="_blank" rel="noopener">Facebook</a>
-      </div>
+    <div class="pied-bas">
+      <span>&copy; <span data-annee></span> Bird Hunter - Domaine de Chasse Privée</span>
+      <span class="sep">•</span>
+      <a href="https://caza-comm.fr" target="_blank" rel="noopener">Réalisé par <b>CAZA COMM</b></a>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script>
-    // Nav mobile identique
-    (function(){
-      const menuToggle=document.querySelector('.menu-toggle'); const nav=document.querySelector('header nav');
-      if(!menuToggle||!nav) return;
-      menuToggle.addEventListener('click',()=>nav.classList.toggle('open'));
-      document.addEventListener('click',e=>{const inMenu=nav.contains(e.target); const onToggle=menuToggle.contains(e.target); if(!inMenu&&!onToggle&&nav.classList.contains('open')) nav.classList.remove('open');});
-    })();
 
-    // Dates
-    document.getElementById('year').textContent=new Date().getFullYear();
-    document.getElementById('maj').textContent=new Date().toLocaleDateString('fr-FR');
-  </script>
+<!-- Barre d'appel fixe (téléphone uniquement) -->
+<div class="barre-appel">
+  <a href="tel:+33609276288" class="btn btn-principal">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 3a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
+    Appeler
+  </a>
+  <a href="index.html#contact" class="btn btn-clair">Nous écrire</a>
+</div>
+
+<script src="assets/script.js" defer></script>
+
 </body>
 </html>

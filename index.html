@@ -6,13 +6,10 @@
 
   <!-- ═══════════════════════════════════════════════════════════
        SEO — PAGE D'ACCUEIL  ·  Bird Hunter 65
-       Dernière mise à jour : avril 2026
        ═══════════════════════════════════════════════════════════ -->
 
-  <!-- Title : requête principale + USP + localité (~60 car.) -->
   <title>Bird Hunter – Chasse privée petit gibier à Tournay | Hautes-Pyrénées (65)</title>
 
-  <!-- Meta description : ~155 car., USP + types de chasse + surface + hébergement + zones -->
   <meta name="description"
         content="Bird Hunter, domaine de chasse privée à Tournay (65) : chasse au petit gibier (faisan, perdrix), journée, week-end ou action annuelle. 120 ha, hébergement sur place. Landes, Pyrénées, Occitanie." />
 
@@ -27,7 +24,6 @@
   <meta name="geo.position" content="43.1886;0.2830" />
   <meta name="ICBM" content="43.1886, 0.2830" />
 
-  <!-- Keywords : requêtes GSC + longue traîne élargie + zones géo -->
   <meta name="keywords"
         content="birdhunter, bird hunter, bird hunter 65, birds hunter, the bird hunter,
                  bird hunt, bird hunting, hunter bird, qu bird hunter,
@@ -62,7 +58,7 @@
   <meta property="og:title" content="Bird Hunter – Domaine de chasse privée petit gibier à Tournay (65)" />
   <meta property="og:description" content="Chasse privée au petit gibier à Tournay (Hautes-Pyrénées) : faisan, perdrix. Journée, week-end ou action annuelle. 120 ha, hébergement sur place." />
   <meta property="og:url" content="https://birdhunter65.fr/" />
-  <meta property="og:image" content="https://birdhunter65.fr/imagesbirdhunter/logo.jpg" />
+  <meta property="og:image" content="https://birdhunter65.fr/imagesbirdhunter/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Bird Hunter 65 – domaine de chasse privée à Tournay, Hautes-Pyrénées" />
@@ -73,17 +69,19 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Bird Hunter – Chasse privée petit gibier à Tournay (65)" />
   <meta name="twitter:description" content="Domaine de chasse privée 120 ha à Tournay : faisan, perdrix. Journée, week-end ou action annuelle. Hébergement sur place." />
-  <meta name="twitter:image" content="https://birdhunter65.fr/imagesbirdhunter/logo.jpg" />
+  <meta name="twitter:image" content="https://birdhunter65.fr/imagesbirdhunter/og-image.jpg" />
   <meta name="twitter:image:alt" content="Bird Hunter 65 – domaine de chasse privée à Tournay" />
 
   <!-- ═══════════════════════════════════════════════════════════
-       TECHNIQUE  (favicons · manifest · fonts)
+       FAVICONS · MANIFEST
+       (icônes régénérées à partir du faisan en vol du logo :
+        le logo complet était illisible en 16 px)
        ═══════════════════════════════════════════════════════════ -->
-  <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="msapplication-TileColor" content="#424D2D" />
   <meta name="msapplication-config" content="/browserconfig.xml" />
@@ -91,13 +89,21 @@
 
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
+  <!-- Polices + image d'accueil chargées en priorité -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="image" href="imagesbirdhunter/bird16.jpg" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="imagesbirdhunter/hero.jpg" fetchpriority="high" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- Sécurité : si le JavaScript est désactivé, tout le contenu reste visible -->
+  <noscript>
+    <style>.apparition{opacity:1!important;transform:none!important}</style>
+  </noscript>
 
   <!-- ═══════════════════════════════════════════════════════════
        DONNÉES STRUCTURÉES  (Schema.org – JSON-LD)
-       SportsActivityLocation + OfferCatalog + FAQ
        ═══════════════════════════════════════════════════════════ -->
   <script type="application/ld+json">
   {
@@ -107,10 +113,13 @@
     "name": "Bird Hunter 65",
     "alternateName": ["Bird Hunter", "BirdHunter", "BirdHunter 65", "Birds Hunter", "The Bird Hunter"],
     "url": "https://birdhunter65.fr/",
-    "image": "https://birdhunter65.fr/imagesbirdhunter/logo.jpg",
+    "image": "https://birdhunter65.fr/imagesbirdhunter/og-image.jpg",
+    "logo": "https://birdhunter65.fr/imagesbirdhunter/logo.jpg",
     "description": "Bird Hunter, domaine de chasse privée à Tournay (Hautes-Pyrénées). Chasse au petit gibier (faisan, perdrix), entraînement de chiens, hébergement à la bergerie. 120 hectares dédiés. Journée, week-end ou action annuelle.",
     "telephone": "+33609276288",
+    "email": "birdhunterdu65@gmail.com",
     "priceRange": "€€€",
+    "currenciesAccepted": "EUR",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Chemin de la Lande",
@@ -144,6 +153,7 @@
       { "@type": "LocationFeatureSpecification", "name": "Domaine de 120 hectares", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Hébergement sur place (bergerie)", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Entraînement de chiens de chasse", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Postes aménagés pour personnes à mobilité réduite", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Parking privé", "value": true }
     ],
     "hasOfferCatalog": {
@@ -152,37 +162,81 @@
       "itemListElement": [
         {
           "@type": "Offer",
+          "price": "220",
+          "priceCurrency": "EUR",
           "itemOffered": {
             "@type": "Service",
-            "name": "Journée de chasse petit gibier",
-            "description": "Chasse au faisan et à la perdrix sur le domaine, à la journée"
+            "name": "Chasse journée & demi-journée",
+            "description": "Lundi, mercredi, samedi – 8 fusils max. Perdreaux et faisans. 8 pièces par fusil à la journée, 4 pièces en demi-journée."
           }
         },
         {
           "@type": "Offer",
+          "price": "2890",
+          "priceCurrency": "EUR",
           "itemOffered": {
             "@type": "Service",
-            "name": "Week-end de chasse",
-            "description": "Week-end de chasse avec hébergement à la bergerie et repas"
+            "name": "Action de chasse annuelle",
+            "description": "16 jours (ou demi-action de 8 jours). Perdreaux et faisans, journée gros gibier incluse, postes migrateurs en janvier et février. Repas inclus."
           }
         },
         {
           "@type": "Offer",
+          "price": "650",
+          "priceCurrency": "EUR",
           "itemOffered": {
             "@type": "Service",
-            "name": "Action annuelle",
-            "description": "Action de chasse annuelle sur le domaine de 120 hectares"
+            "name": "Week-end Bird Hunter",
+            "description": "2 jours de chasse avec hébergement à la bergerie et pension complète. 8 fusils max."
           }
         },
         {
           "@type": "Offer",
+          "price": "60",
+          "priceCurrency": "EUR",
           "itemOffered": {
             "@type": "Service",
-            "name": "Entraînement chiens de chasse",
-            "description": "Entraînement et dressage de chiens de chasse sur le domaine"
+            "name": "Entraînement de chiens de chasse",
+            "description": "De juin à septembre, parc de 3 hectares (faisans, perdrix). Session de 2 heures."
+          }
+        },
+        {
+          "@type": "Offer",
+          "price": "200",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Chasse au migrateur",
+            "description": "De décembre à février. Palombes et bécasses, 4 chasseurs max par poste."
+          }
+        },
+        {
+          "@type": "Offer",
+          "price": "200",
+          "priceCurrency": "EUR",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Chasse à l'approche",
+            "description": "De juin à octobre, avec accompagnement d'un garde. Chevreuil 200 €, sanglier 300 €."
           }
         }
       ]
+    },
+    "hasMap": "https://www.google.com/maps/place/Bird+Hunter/@43.1886169,0.2829830,17z",
+    "isAccessibleForFree": false,
+    "publicAccess": false,
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "name": "Réserver une journée de chasse",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://birdhunter65.fr/#contact",
+        "inLanguage": "fr-FR",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
     },
     "sameAs": [
       "https://www.facebook.com/people/Bird-Hunter/61558949325470/"
@@ -254,12 +308,7 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Accueil",
-        "item": "https://birdhunter65.fr/"
-      }
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://birdhunter65.fr/" }
     ]
   }
   </script>
@@ -271,514 +320,579 @@
     "@type": "WebSite",
     "name": "Bird Hunter 65",
     "url": "https://birdhunter65.fr/",
+    "inLanguage": "fr-FR",
+    "publisher": { "@id": "https://birdhunter65.fr/#org" },
     "description": "Domaine de chasse privée petit gibier à Tournay – Hautes-Pyrénées. Faisan, perdrix, 120 hectares, hébergement."
   }
   </script>
-
-  <style>
-    /* ===== Base Reset ===== */
-    *{margin:0;padding:0;box-sizing:border-box}
-    html,body{overflow-x:hidden}
-    body{font-family:'Open Sans',sans-serif;line-height:1.6;color:#1C1C1C;background:#FFFFFF;padding-top:80px}
-    h1,h2,h3{font-family:'Playfair Display',serif;color:#424D2D;margin-bottom:3rem}
-    a{text-decoration:none;color:inherit}
-    .container{width:90%;max-width:1200px;margin:0 auto}
-
-    /* ===== Header ===== */
-    header{position:fixed;top:0;left:0;width:100%;background:#424D2D;padding:15px 0;box-shadow:0 2px 5px rgba(0,0,0,.1);z-index:1000}
-    .header-content{display:flex;justify-content:space-between;align-items:center}
-    .logo{margin-left:10px}
-    .logo img{height:60px;width:auto;display:block}
-    .menu-toggle{display:none;background:none;border:none;font-size:1.8rem;cursor:pointer;color:#FFF}
-    nav{margin-left:auto}
-    .nav-links{list-style:none;display:flex;gap:20px}
-    .nav-links a{padding:5px 10px;font-weight:600;transition:color .3s;color:#FFF}
-    .nav-links a:hover{color:#f5f0e3}
-
-    /* ===== Hero ===== */
-    .hero{height:100vh;background:url('imagesbirdhunter/bird16.jpg') center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center;text-align:center}
-    .hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.4);z-index:1}
-    .hero-content{position:relative;color:#FFF;padding:8rem 2rem;z-index:2}
-    .hero-content h1{font-size:4rem;margin-bottom:1rem;text-shadow:1px 1px 2px #fff,-1px -1px 2px #fff}
-    .hero-content p{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:2rem}
-    .hero-content .btn{background:#424D2D;color:#FFF;font-size:1.2rem;padding:.75rem 2rem;border:none;border-radius:5px;cursor:pointer;transition:background .3s ease}
-    .hero-content .btn:hover{background:#2f391f}
-
-    /* ===== Generic Button ===== */
-    .btn{display:inline-block;margin-top:20px;padding:10px 20px;background:#424D2D;color:#FFF;border-radius:5px;transition:background .3s}
-    .btn:hover{background:#2f391f}
-
-    /* ===== Sections ===== */
-    section{padding:80px 0}
-    .about{background:#F5F0E3;text-align:center}
-    .about p{max-width:1000px;margin:auto;line-height:1.8;padding:20px 0;font-size:1.1rem;font-family:'Georgia',serif}
-
-    .espaces .space-grid{display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-    .space img{width:100%;border-radius:10px}
-    .space h3{margin-top:10px}
-
-    /* ===== Events (Journée type) ===== */
-    .events{background:#FFFFFF;text-align:center}
-    .events.hero-style{position:relative;background:url('imagesbirdhunter/bird10.jpg') center/cover no-repeat;color:#FFF;padding:100px 0;z-index:1}
-    .events.hero-style .overlay{position:absolute;inset:0;background:rgba(0,0,0,.5);z-index:1}
-    .events-content{position:relative;z-index:2;text-align:center;max-width:900px;margin:auto}
-    .events-content h2{color:#FFF;margin-bottom:2rem}
-    .events-content p{font-size:1.2rem;line-height:1.8;margin-bottom:2rem}
-
-    /* ===== Galerie générique ===== */
-    .galerie .gallery-grid{display:grid;gap:15px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
-    .galerie img{width:100%;height:auto;border-radius:8px}
-
-    /* ===== Bergerie (Hero bloc) ===== */
-    .bergerie{background:url('imagesbirdhunter/bergerie.jpg') center/cover no-repeat;position:relative;color:#FFF;text-align:center;padding:8rem 2rem}
-    .bergerie::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.5);z-index:1}
-    .bergerie .container{position:relative;z-index:2}
-    .bergerie h2{font-size:3rem;margin-bottom:1.5rem;color:#FFF}
-    .bergerie p{font-size:1.2rem;max-width:1000px;margin:0 auto 2rem}
-    .bergerie .btn{margin:0 10px}
-
-    /* ===== Section Avis ===== */
-    .reviews{background:#F5F0E3}
-    .reviews h2{text-align:center}
-    .avis-carousel{position:relative;max-width:100%;margin:auto;padding:40px 0;display:flex;align-items:center;justify-content:center}
-    .carousel-track-container{overflow-x:auto;width:100%;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;cursor:grab}
-    .carousel-track-container.dragging{cursor:grabbing}
-    .carousel-track{display:flex;gap:20px;transition:transform .5s ease;flex-wrap:nowrap;padding:0 10px}
-    .avis-card{flex:0 0 33.33%;max-width:33.33%;box-sizing:border-box;padding:20px;background:#FFF;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,.1);text-align:center;scroll-snap-align:start}
-    .avis-card p{font-size:1rem;font-style:italic;margin-bottom:10px}
-    .avis-card h4{color:#666;font-weight:600}
-    .stars{font-size:1.1rem;letter-spacing:.1rem;color:#FFC107;margin-bottom:8px}
-    .carousel-btn{background:#7A5C41;color:#FFF;border:none;border-radius:50%;width:40px;height:40px;font-size:1.2rem;cursor:pointer;transition:background .3s ease;z-index:2}
-    .carousel-btn:hover{background:#5C422F}
-    .carousel-controls{display:flex;gap:12px;align-items:center;justify-content:center;margin-top:18px}
-
-    @media (max-width:1024px){.avis-card{flex:0 0 50%;max-width:50%}}
-    @media (max-width:768px){.avis-card{flex:0 0 100%;max-width:100%}.carousel-btn{margin:0}}
-
-    /* ===== Contact ===== */
-    .contact-wrapper{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
-    .map{flex:1 1 300px;min-height:300px;background:#EAEAEA}
-    .form-area{flex:1 1 300px}
-    .form-area form{display:flex;flex-direction:column;gap:10px}
-    .form-area input,.form-area textarea{width:100%;padding:8px;border:1px solid #CCC;border-radius:5px}
-    .coords{margin-top:20px;text-align:center;font-size:1rem;line-height:1.8}
-    .coords a{color:#7A5C41;text-decoration:underline;font-weight:bold}
-    .coords p{margin:10px 0}
-
-    /* ===== Contact card (Bird Hunter) ===== */
-.contact-card{background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08);padding:22px}
-.contact-card h3{color:#424D2D;margin:0 0 8px}
-.contact-card p{margin:0 0 16px}
-.contact-buttons{display:flex;flex-direction:column;gap:12px;margin:14px 0 8px}
-.btn-call,.btn-mail{display:inline-flex;align-items:center;gap:10px;justify-content:center;padding:14px 18px;border-radius:999px;font-weight:800}
-.btn-call{background:#424D2D;color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.25)}
-.btn-call:hover{filter:brightness(1.05)}
-.btn-mail{background:#fff;color:#424D2D;border:2px solid #424D2D}
-.btn-mail:hover{background:#f7f7f7}
-.btn-call svg,.btn-mail svg{width:22px;height:22px;display:block}
-
-/* Liens alternatives e-mail */
-.alt-mail{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
-.alt-mail a{display:inline-block;padding:6px 10px;border:1px solid rgba(66,77,45,.25);border-radius:999px;font-size:.95rem;color:#424D2D}
-
-/* Coordonnées en plus grand */
-.coords-big{margin-top:16px;text-align:center;line-height:1.9}
-.coords-big a{color:#424D2D;text-decoration:underline;font-weight:700}
-
-/* Note d’excuse */
-.note-alert{position:relative;margin:16px 0 4px;padding:12px 38px 12px 12px;border:1px solid rgba(66,77,45,.25);border-radius:12px;background:#FAFDF7}
-.note-alert strong{color:#424D2D}
-.note-close{position:absolute;right:10px;top:10px;border:0;background:transparent;font-size:20px;cursor:pointer;color:#424D2D;line-height:1}
-@media (max-width:768px){.contact-buttons{gap:10px}.btn-call,.btn-mail{width:100%}}
-
-    /* ===== Footer ===== */
-    footer{background:#3B5A3D;color:#FFF;padding:20px 0}
-    .footer-content{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
-    .footer-links a{margin:0 10px;color:#FFF}
-.footer-links{display:flex;gap:14px;align-items:center}
-.footer-links .social-link{display:inline-flex;line-height:0}
-.footer-links .social-ico{height:24px;width:auto;display:block;transition:opacity .2s,transform .2s}
-.footer-links .social-link:hover .social-ico{opacity:.9;transform:translateY(-1px)}
-/* Si ton PNG est noir et que tu le veux blanc sur fond vert (optionnel, pour icône monochrome uniquement) */
-/* .footer-links .social-ico{filter:brightness(0) invert(1)} */
-    .sep{margin:0 8px;opacity:.45}.madeby{color:inherit;text-decoration:none;opacity:.75}.madeby:hover{opacity:1;text-decoration:underline}
-
-
-    /* ===== Animations ===== */
-    .fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}
-    .fade-in.show{opacity:1;transform:none}
-
-    /* ===== Mobile Nav ===== */
-    @media (max-width:768px){
-      .menu-toggle{display:block}
-      nav{position:absolute;top:100%;right:0;background:#FFFFFF;box-shadow:0 2px 5px rgba(0,0,0,.1);display:none}
-      nav.open{display:block;background-color:#424D2D!important}
-      .nav-links{flex-direction:column;padding:10px 20px;gap:10px}
-      nav.open .nav-links a{color:#FFF!important}
-    }
-
-    /* ===== Paragraphs justification standard (préférence) ===== */
-    p:not(.center-btn){text-align:justify;text-justify:inter-word;text-align-last:left;hyphens:auto;-webkit-hyphens:auto}
-  </style>
 </head>
 
 <body>
-  <!-- ===== Header ===== -->
-  <header>
-    <div class="container header-content">
-      <div class="logo">
-        <a href="#accueil"><img src="imagesbirdhunter/logo.jpg" alt="Bird Hunter Domaine de Chasse" /></a>
-      </div>
-      <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#domaine">Le Domaine</a></li>
-          <li><a href="#offres">Nos Offres</a></li>
-          <li><a href="#organisation">Organisation</a></li>
-          <li><a href="#entrainement">Entraînement & Migrateurs</a></li>
-          <li><a href="#bergerie">Bergerie</a></li>
-          <li><a href="#avis">Avis</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- ===== Hero ===== -->
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     EN-TÊTE
+     ═══════════════════════════════════════════════════════════════════════ -->
+<header class="entete">
+  <div class="container entete-inner">
+
+    <a class="logo" href="#accueil" aria-label="Bird Hunter, retour en haut de page">
+      <img src="imagesbirdhunter/logo.jpg" alt="Logo Bird Hunter" width="60" height="60" />
+      <span class="logo-texte">
+        <span class="nom">Bird Hunter</span>
+        <span class="lieu">Tournay · Hautes-Pyrénées</span>
+      </span>
+    </a>
+
+    <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-principal">
+      <span></span>
+    </button>
+
+    <nav class="nav-principale" id="menu-principal" aria-label="Menu principal">
+      <ul class="nav-liste">
+        <li><a href="#domaine">Le Domaine</a></li>
+        <li><a href="#offres">Nos Offres</a></li>
+        <li><a href="#journee">La Journée</a></li>
+        <li><a href="#bergerie">Bergerie</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="tel-entete" href="tel:+33609276288">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 3a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
+      06 09 27 62 88
+    </a>
+
+  </div>
+</header>
+
+
+<main id="contenu">
+
+  <!-- ═════════════════════════════════════════════════════════════════════
+       ACCUEIL
+       ═════════════════════════════════════════════════════════════════════ -->
   <section id="accueil" class="hero">
-    <div class="hero-content fade-in">
+    <div class="hero-contenu">
+      <span class="sur-titre">Domaine de chasse privée · Tournay (65)</span>
       <h1>Bird Hunter</h1>
-      <p>Domaine de chasse privée à Tournay – 120 hectares de passion</p>
-      <a href="#domaine" class="btn">Découvrir</a>
-    </div>
-  </section>
-
-  <!-- ===== Domaine ===== -->
-  <section id="domaine" class="about fade-in">
-    <div class="container">
-      <h2>Le Domaine</h2>
-      <p>Bird Hunter, c’est 120 hectares de nature à Tournay (65), mêlant bois de feuillus, pinèdes, plaines, clairières et sources naturelles. Un biotope varié, aménagé pour la chasse au petit gibier, qui offre des terrains lisibles et agréables à parcourir.
-
-Les parcours sont conçus pour allier immersion et sécurité, avec des couverts variés qui favorisent la tenue du gibier et les remises. Selon les formules, les sorties se font en effectif limité (jusqu’à 8 fusils) afin de conserver un rythme de chasse fluide et sécurisé.
-
-Côté espèces, la chasse cible principalement perdreaux et faisans (et, selon les périodes, lapins). En saison, le domaine accueille également l’entraînement de chiens ainsi que la chasse au migrateur.
-
-Pour votre confort, nous proposons une formule unique petit-déjeuner + déjeuner à 35 €.
-Et si vous le souhaitez, possibilité d’accompagnement à la journée ou à la demi-journée (aide à l’organisation et au déroulé sur le terrain). Pour en savoir plus, contactez-nous.</p>
-    </div>
-  </section>
-
-  <!-- ===== Offres ===== -->
-  <section id="offres" class="espaces">
-    <div class="container">
-      <h2 class="fade-in">Nos Offres de Chasse</h2>
-      <div class="space-grid">
-        <div class="space fade-in">
-          <img src="imagesbirdhunter/bird4.jpg" alt="Journée de chasse" />
-          <h3>Chasse Journée &amp; Demi-journée</h3>
-          <p>Lundi, Mercredi, Samedi – 8 fusils max<br />Perdreaux – Faisans<br />8 pièces par fusil (journée)<br />4 pièces (demi-journée)<br /><strong>220 €</strong> journée | <strong>120 €</strong> demi-journée (hors repas)</p>
-        </div>
-        <div class="space fade-in">
-          <img src="imagesbirdhunter/bird9.jpg" alt="Action de chasse annuelle" />
-          <h3>Action de Chasse Annuelle</h3>
-          <p>16 jours (ou demi-action : 8 jours)<br />Perdreaux – Faisans<br />Journée gros gibier incluse<br />Postes migrateurs janv/fév<br /><strong>2890 €</strong> | <strong>1500 €</strong> demi-action (repas inclus)</p>
-        </div>
-        <div class="space fade-in">
-          <img src="imagesbirdhunter/bird5.jpg" alt="Week-end Chasse" />
-          <h3>Week-end Bird Hunter</h3>
-          <p>2 jours de chasse + hébergement + pension complète<br />10 pièces par jour env. | 8 fusils max<br /><strong>650 €</strong></p>
-        </div>
+      <p class="accroche">Domaine de chasse privée à Tournay – 120 hectares de passion</p>
+      <div class="groupe-btn centre">
+        <a href="#offres" class="btn btn-principal">Voir nos offres et nos tarifs</a>
+        <a href="tel:+33609276288" class="btn btn-contour-blanc">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 3a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
+          Appeler le 06 09 27 62 88
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ===== Organisation journée type ===== -->
-  <section id="organisation" class="events hero-style">
-    <div class="overlay"></div>
+  <!-- Chiffres clés -->
+  <section class="reperes" aria-label="Le domaine en bref">
+    <div class="container reperes-grille">
+      <div class="repere"><div class="valeur">120 hectares</div><div class="libelle">de nature aménagée</div></div>
+      <div class="repere"><div class="valeur">8 fusils max</div><div class="libelle">pour chasser en sécurité</div></div>
+      <div class="repere"><div class="valeur">Sur place</div><div class="libelle">hébergement à la bergerie</div></div>
+      <div class="repere"><div class="valeur">Tournay (65)</div><div class="libelle">à 15 min de Tarbes</div></div>
+    </div>
+  </section>
+
+
+  <!-- ═════════════════════════════════════════════════════════════════════
+       LE DOMAINE
+       ═════════════════════════════════════════════════════════════════════ -->
+  <section id="domaine" class="section section--creme">
+    <div class="container domaine-grille">
+
+      <div class="domaine-texte apparition">
+        <h2>Le Domaine</h2>
+
+        <p>Bird Hunter, c’est 120 hectares de nature à Tournay (65), mêlant bois de feuillus, pinèdes, plaines, clairières et sources naturelles. Un biotope varié, aménagé pour la chasse au petit gibier, qui offre des terrains lisibles et agréables à parcourir.</p>
+
+        <p>Les parcours sont conçus pour allier immersion et sécurité, avec des couverts variés qui favorisent la tenue du gibier et les remises. Selon les formules, les sorties se font en effectif limité (jusqu’à 8 fusils) afin de conserver un rythme de chasse fluide et sécurisé.</p>
+
+        <p>Côté espèces, la chasse cible principalement perdreaux et faisans (et, selon les périodes, lapins). En saison, le domaine accueille également l’entraînement de chiens ainsi que la chasse au migrateur.</p>
+
+        <div class="domaine-encart">
+          <p>Pour votre confort, nous proposons une formule unique <strong>petit-déjeuner + déjeuner à 35 €</strong>.<br />
+          Et si vous le souhaitez, possibilité d’accompagnement à la journée ou à la demi-journée (aide à l’organisation et au déroulé sur le terrain). Pour en savoir plus, <a href="#contact" style="color:var(--ocre);text-decoration:underline;font-weight:700">contactez-nous</a>.</p>
+        </div>
+      </div>
+
+      <div class="domaine-image apparition">
+        <img src="imagesbirdhunter/domaine.jpg"
+             alt="Sous-bois de feuillus du domaine de chasse, lumière d'automne"
+             width="1400" height="934" loading="lazy" decoding="async" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═════════════════════════════════════════════════════════════════════
+       NOS OFFRES  (6 formules)
+       ═════════════════════════════════════════════════════════════════════ -->
+  <section id="offres" class="section section--blanc">
     <div class="container">
-      <div class="events-content">
-        <h2>Organisation d'une Journée</h2>
-        <p>8h : Petit-déjeuner Campagnard<br />9h : Départ à la chasse<br />12h30 : Déjeuner à la Bergerie<br />14h : Reprise de la chasse<br />17h : Tableau de chasse et cocktail apéritif<br />Des postes aménagés sont disponibles pour les personnes à mobilité réduite.</p>
+
+      <div class="titre-section apparition">
+        <h2>Nos Offres de Chasse</h2>
+        <p>Six formules, du simple après-midi à l’action annuelle. Les tarifs sont indiqués par personne.</p>
+      </div>
+
+      <div class="offres-grille">
+
+        <!-- 1 · Journée & demi-journée -->
+        <article class="offre apparition">
+          <div class="offre-image">
+            <img src="imagesbirdhunter/offre-journee.jpg" alt="Faisan dans un champ" width="1200" height="800" loading="lazy" decoding="async" />
+            <span class="offre-etiquette">Lun · Mer · Sam</span>
+          </div>
+          <div class="offre-corps">
+            <h3>Chasse Journée &amp; Demi-journée</h3>
+            <ul class="offre-details">
+              <li>Lundi, Mercredi, Samedi – 8 fusils max</li>
+              <li>Perdreaux – Faisans</li>
+              <li>8 pièces par fusil (journée)</li>
+              <li>4 pièces (demi-journée)</li>
+            </ul>
+            <div class="offre-prix">
+              <span class="montant">220 € <span class="unite">la journée</span></span>
+              <span class="second"><b>120 €</b> la demi-journée</span>
+              <span class="mention">Hors repas</span>
+            </div>
+            <a href="#contact" class="btn btn-vert" data-formule="Chasse Journée &amp; Demi-journée">Demander cette formule</a>
+          </div>
+        </article>
+
+        <!-- 2 · Action annuelle -->
+        <article class="offre apparition">
+          <div class="offre-image">
+            <img src="imagesbirdhunter/offre-annuelle.jpg" alt="Perdrix rouge dans l'herbe" width="1200" height="800" loading="lazy" decoding="async" />
+            <span class="offre-etiquette">16 jours</span>
+          </div>
+          <div class="offre-corps">
+            <h3>Action de Chasse Annuelle</h3>
+            <ul class="offre-details">
+              <li>16 jours (ou demi-action : 8 jours)</li>
+              <li>Perdreaux – Faisans</li>
+              <li>Journée gros gibier incluse</li>
+              <li>Postes migrateurs janv/fév</li>
+            </ul>
+            <div class="offre-prix">
+              <span class="montant">2890 € <span class="unite">l’action</span></span>
+              <span class="second"><b>1500 €</b> la demi-action</span>
+              <span class="mention">Repas inclus</span>
+            </div>
+            <a href="#contact" class="btn btn-vert" data-formule="Action de Chasse Annuelle">Demander cette formule</a>
+          </div>
+        </article>
+
+        <!-- 3 · Week-end -->
+        <article class="offre apparition">
+          <div class="offre-image">
+            <img src="imagesbirdhunter/offre-weekend.jpg" alt="Chambre de la bergerie, poutres apparentes" width="1200" height="800" loading="lazy" decoding="async" />
+            <span class="offre-etiquette">2 jours · nuit sur place</span>
+          </div>
+          <div class="offre-corps">
+            <h3>Week-end Bird Hunter</h3>
+            <ul class="offre-details">
+              <li>2 jours de chasse + hébergement + pension complète</li>
+              <li>10 pièces par jour env.</li>
+              <li>8 fusils max</li>
+            </ul>
+            <div class="offre-prix">
+              <span class="montant">650 € <span class="unite">le week-end</span></span>
+              <span class="mention">Hébergement et repas compris</span>
+            </div>
+            <a href="#contact" class="btn btn-vert" data-formule="Week-end Bird Hunter">Demander cette formule</a>
+          </div>
+        </article>
+
+        <!-- 4 · Entraînement chiens -->
+        <article class="offre apparition" id="entrainement">
+          <div class="offre-image">
+            <img src="imagesbirdhunter/offre-chien.jpg" alt="Chien de chasse en action dans un champ" width="1200" height="800" loading="lazy" decoding="async" />
+            <span class="offre-etiquette">Juin → Septembre</span>
+          </div>
+          <div class="offre-corps">
+            <h3>Entraînement Chiens</h3>
+            <ul class="offre-details">
+              <li>De juin à septembre</li>
+              <li>Parc 3 hectares (faisans, perdrix)</li>
+              <li>2 personnes max – 1 chien à la fois</li>
+            </ul>
+            <div class="offre-prix">
+              <span class="montant">60 € <span class="unite">la session</span></span>
+              <span class="mention">Session de 2 h</span>
+            </div>
+            <a href="#contact" class="btn btn-vert" data-formule="Entraînement Chiens">Demander cette formule</a>
+          </div>
+        </article>
+
+        <!-- 5 · Migrateurs -->
+        <article class="offre apparition">
+          <div class="offre-image">
+            <img src="imagesbirdhunter/offre-migrateurs.jpg" alt="Oiseaux migrateurs en vol dans un ciel doré" width="1200" height="800" loading="lazy" decoding="async" />
+            <span class="offre-etiquette">Décembre → Février</span>
+          </div>
+          <div class="offre-corps">
+            <h3>Chasse au Migrateur</h3>
+            <ul class="offre-details">
+              <li>Décembre à février</li>
+              <li>Palombes &amp; bécasses</li>
+              <li>4 chasseurs max par poste</li>
+            </ul>
+            <div class="offre-prix">
+              <span class="montant">200 € <span class="unite">par poste</span></span>
+              <span class="mention">Repas non inclus</span>
+            </div>
+            <a href="#contact" class="btn btn-vert" data-formule="Chasse au Migrateur">Demander cette formule</a>
+          </div>
+        </article>
+
+        <!-- 6 · Approche -->
+        <article class="offre apparition">
+          <div class="offre-image">
+            <img src="imagesbirdhunter/offre-approche.jpg" alt="Sanglier en sous-bois" width="1200" height="800" loading="lazy" decoding="async" />
+            <span class="offre-etiquette">Juin → Octobre</span>
+          </div>
+          <div class="offre-corps">
+            <h3>Chasse à l’Approche</h3>
+            <ul class="offre-details">
+              <li>Juin à octobre</li>
+              <li>Avec accompagnement d’un garde</li>
+            </ul>
+            <div class="offre-prix">
+              <span class="montant">200 € <span class="unite">chevreuil</span></span>
+              <span class="second"><b>300 €</b> sanglier</span>
+            </div>
+            <a href="#contact" class="btn btn-vert" data-formule="Chasse à l’Approche">Demander cette formule</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="offres-note apparition">
+        Une question sur une formule, une date ou un groupe ?
+        <strong>Appelez-nous au <a href="tel:+33609276288" style="color:var(--ocre);text-decoration:underline">06 09 27 62 88</a></strong>,
+        nous vous répondons directement.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ═════════════════════════════════════════════════════════════════════
+       LA JOURNÉE TYPE
+       ═════════════════════════════════════════════════════════════════════ -->
+  <section id="journee" class="section journee">
+    <div class="container">
+
+      <div class="titre-section sur-image apparition">
+        <h2>Organisation d’une Journée</h2>
+        <p>Du petit-déjeuner au tableau de chasse, voici comment se déroule une journée au domaine.</p>
+      </div>
+
+      <div class="horaires">
+        <div class="horaire apparition"><span class="heure">8h</span><span class="quoi">Petit-déjeuner Campagnard</span></div>
+        <div class="horaire apparition"><span class="heure">9h</span><span class="quoi">Départ à la chasse</span></div>
+        <div class="horaire apparition"><span class="heure">12h30</span><span class="quoi">Déjeuner à la Bergerie</span></div>
+        <div class="horaire apparition"><span class="heure">14h</span><span class="quoi">Reprise de la chasse</span></div>
+        <div class="horaire apparition"><span class="heure">17h</span><span class="quoi">Tableau de chasse et cocktail apéritif</span></div>
+      </div>
+
+      <p class="journee-info apparition">
+        Des postes aménagés sont disponibles pour les personnes à mobilité réduite.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ═════════════════════════════════════════════════════════════════════
+       BERGERIE
+       ═════════════════════════════════════════════════════════════════════ -->
+  <section id="bergerie" class="section bergerie">
+    <div class="container bergerie-grille">
+      <div class="bergerie-texte apparition">
+        <h2>Dormez sur place dans la Bergerie</h2>
+
+        <p>Profitez d’un hébergement sur place dans notre bergerie rénovée, au cœur du domaine. Calme, confort et proximité immédiate des parcours pour prolonger l’expérience de chasse et repartir dès l’aube sans déplacements.</p>
+
+        <p>Située à deux pas des zones de chasse, la bergerie simplifie l’organisation : préparation dès le matin, pause au sec le midi, fin de journée conviviale, puis nuit sur place pour enchaîner sereinement. Idéal pour une journée, une demi-journée ou un week-end entre chasseurs.</p>
+
+        <p>Sur demande, possibilité d’accompagnement pendant la journée ou la demi-journée (mise en route, repères, appui terrain). Contactez-nous pour les modalités.</p>
+
+        <div class="groupe-btn">
+          <a href="#contact" class="btn btn-principal" data-formule="Week-end Bird Hunter">Réserver</a>
+          <a href="#contact" class="btn btn-contour-blanc">Nous contacter</a>
+        </div>
+      </div>
+
+      <figure class="bergerie-photo apparition">
+        <img src="imagesbirdhunter/bergerie-vue.jpg"
+             alt="Vue aérienne de la bergerie et du domaine Bird Hunter, avec les Pyrénées à l'horizon"
+             width="1200" height="1200" loading="lazy" decoding="async" />
+        <figcaption>La bergerie et le domaine, avec les Pyrénées à l’horizon</figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <!-- ═════════════════════════════════════════════════════════════════════
+       AVIS
+       Pour ajouter un avis : dupliquez un bloc <article class="avis">,
+       changez la citation et le nom. Les ★ se règlent à la main.
+       ═════════════════════════════════════════════════════════════════════ -->
+  <section id="avis" class="section section--creme">
+    <div class="container">
+
+      <div class="titre-section apparition">
+        <h2>Avis de nos chasseurs</h2>
+        <p>Ils sont venus chasser au domaine, voici ce qu’ils en disent.</p>
+      </div>
+
+      <div class="avis-grille">
+
+        <article class="avis apparition">
+          <div class="etoiles" aria-label="Note 5 sur 5"><span aria-hidden="true">★★★★★</span></div>
+          <blockquote>Super domaine, biotopes variés et accueil au top. On s’est régalés toute la journée.</blockquote>
+          <p class="auteur">Pierre L.</p>
+        </article>
+
+        <article class="avis apparition">
+          <div class="etoiles" aria-label="Note 5 sur 5"><span aria-hidden="true">★★★★★</span></div>
+          <blockquote>Organisation carrée du matin au soir. Bons chiens, beaux oiseaux, et un repas excellent.</blockquote>
+          <p class="auteur">Nathalie R.</p>
+        </article>
+
+        <article class="avis apparition">
+          <div class="etoiles" aria-label="Note 5 sur 5"><span aria-hidden="true">★★★★★</span></div>
+          <blockquote>Les parcours sont super bien pensés, on voit du gibier et on chasse en sécurité.</blockquote>
+          <p class="auteur">Julien M.</p>
+        </article>
+
+        <article class="avis apparition">
+          <div class="etoiles" aria-label="Note 5 sur 5"><span aria-hidden="true">★★★★★</span></div>
+          <blockquote>Week‑end parfait entre amis, hébergement à la bergerie très confortable. On revient !</blockquote>
+          <p class="auteur">Aurore S.</p>
+        </article>
+
+        <article class="avis apparition">
+          <div class="etoiles" aria-label="Note 5 sur 5"><span aria-hidden="true">★★★★★</span></div>
+          <blockquote>Postes migrateurs bien placés, belles palombes. Merci pour l’accueil.</blockquote>
+          <p class="auteur">Romain D.</p>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== Entraînement & Migrateurs ===== -->
-  <section id="entrainement" class="espaces">
+
+  <!-- ═════════════════════════════════════════════════════════════════════
+       CONTACT
+       ═════════════════════════════════════════════════════════════════════ -->
+  <section id="contact" class="section section--blanc">
     <div class="container">
-      <h2 class="fade-in">Entraînement &amp; Chasse Migrateur</h2>
-      <div class="space-grid">
-        <div class="space fade-in">
-          <img src="imagesbirdhunter/bird6.jpg" alt="Entraînement de chien" />
-          <h3>Entraînement Chiens</h3>
-          <p>De juin à septembre<br />Parc 3 hectares (faisans, perdrix)<br />2 personnes max – 1 chien à la fois<br /><strong>60 €</strong> la session de 2h</p>
-        </div>
-        <div class="space fade-in">
-          <img src="imagesbirdhunter/bird7.jpg" alt="Chasse au migrateur" />
-          <h3>Chasse au Migrateur</h3>
-          <p>Décembre à février<br />Palombes &amp; bécasses<br />4 chasseurs max par poste<br /><strong>200 €</strong> par poste (repas non inclus)</p>
-        </div>
-        <div class="space fade-in">
-          <img src="imagesbirdhunter/bird8.jpg" alt="Chasse à l'approche" />
-          <h3>Chasse à l’Approche</h3>
-          <p>Juin à octobre<br />Avec accompagnement d’un garde<br />Chevreuil : <strong>200 €</strong><br />Sanglier : <strong>300 €</strong></p>
-        </div>
+
+      <div class="titre-section apparition">
+        <h2>Contactez-nous</h2>
+        <p>Pour toute question, devis ou réservation : appelez-nous sur le numéro ci-dessous ou écrivez-nous par e-mail.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- ===== Bergerie ===== -->
-  <section id="bergerie" class="bergerie fade-in">
-    <div class="container">
-      <h2>Dormez sur place dans la Bergerie</h2>
-      <p>Profitez d’un hébergement sur place dans notre bergerie rénovée, au cœur du domaine. Calme, confort et proximité immédiate des parcours pour prolonger l’expérience de chasse et repartir dès l’aube sans déplacements.
+      <div class="contact-grille">
 
-Située à deux pas des zones de chasse, la bergerie simplifie l’organisation : préparation dès le matin, pause au sec le midi, fin de journée conviviale, puis nuit sur place pour enchaîner sereinement. Idéal pour une journée, une demi-journée ou un week-end entre chasseurs.
+        <!-- Colonne gauche : coordonnées + carte -->
+        <div class="apparition">
+          <div class="bloc-contact">
+            <h3>Nos coordonnées</h3>
 
-Sur demande, possibilité d’accompagnement pendant la journée ou la demi-journée (mise en route, repères, appui terrain). Contactez-nous pour les modalités.</p>
-      <a href="#contact" class="btn">Réserver</a>
-      <a href="#contact" class="btn">Nous contacter</a>
-    </div>
-  </section>
+            <div class="groupe-btn" style="margin-top:1.2rem">
+              <a class="btn btn-principal" href="tel:+33609276288" style="flex:1">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 3a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
+                Appeler
+              </a>
+              <a class="btn btn-clair" href="mailto:birdhunterdu65@gmail.com" style="flex:1">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
+                Écrire
+              </a>
+            </div>
 
-  <!-- ===== Avis (NOUVEAU) ===== -->
-  <section id="avis" class="reviews">
-    <div class="container">
-      <h2>Avis de nos chasseurs</h2>
+            <div class="coordonnees">
+              <div class="coordonnee">
+                <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></span>
+                <span>
+                  <span class="libelle">Adresse</span>
+                  <span class="valeur">Chem. de la Lande, 65190 Tournay</span>
+                </span>
+              </div>
 
-      <!--
-        ✅ Pour ajouter/modifier un avis, dupliquez un bloc .avis-card ci-dessous
-        - Remplacez le texte du <p>
-        - Remplacez le nom dans <h4>
-        - Conservez <div class="stars">★★★★★</div> pour 5 étoiles (ajustez si besoin)
-      -->
+              <div class="coordonnee">
+                <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 3a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg></span>
+                <span>
+                  <span class="libelle">Téléphone</span>
+                  <a class="valeur" href="tel:+33609276288">06 09 27 62 88</a>
+                </span>
+              </div>
 
-      <div class="avis-carousel">
-        <div class="carousel-track-container" aria-label="Carrousel d'avis" tabindex="0">
-          <div class="carousel-track">
-            <article class="avis-card">
-              <div class="stars" aria-label="Note 5 sur 5">★★★★★</div>
-              <p>Super domaine, biotopes variés et accueil au top. On s’est régalés toute la journée.</p>
-              <h4>— Pierre L.</h4>
-            </article>
-            <article class="avis-card">
-              <div class="stars" aria-label="Note 5 sur 5">★★★★★</div>
-              <p>Organisation carrée du matin au soir. Bons chiens, beaux oiseaux, et un repas excellent.</p>
-              <h4>— Nathalie R.</h4>
-            </article>
-            <article class="avis-card">
-              <div class="stars" aria-label="Note 5 sur 5">★★★★★</div>
-              <p>Les parcours sont super bien pensés, on voit du gibier et on chasse en sécurité.</p>
-              <h4>— Julien M.</h4>
-            </article>
-            <article class="avis-card">
-              <div class="stars" aria-label="Note 5 sur 5">★★★★★</div>
-              <p>Week‑end parfait entre amis, hébergement à la bergerie très confortable. On revient !</p>
-              <h4>— Aurore S.</h4>
-            </article>
-            <article class="avis-card">
-              <div class="stars" aria-label="Note 5 sur 5">★★★★★</div>
-              <p>Postes migrateurs bien placés, belles palombes. Merci pour l’accueil.</p>
-              <h4>— Romain D.</h4>
-            </article>
+              <div class="coordonnee">
+                <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg></span>
+                <span>
+                  <span class="libelle">E-mail</span>
+                  <a class="valeur" href="mailto:birdhunterdu65@gmail.com">birdhunterdu65@gmail.com</a>
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carte" style="margin-top:1.5rem">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.7135289273624!2d0.2829830749918566!3d43.18861698235657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a9cbe0061fe1f5%3A0x3dc95c683987c353!2sBird%20Hunter!5e1!3m2!1sfr!2sfr!4v1753882761629!5m2!1sfr!2sfr"
+              title="Localisation du domaine Bird Hunter à Tournay"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
+
+        <!-- Colonne droite : formulaire -->
+        <div class="bloc-contact apparition">
+          <h3>Écrivez-nous</h3>
+          <p style="color:var(--gris)">Décrivez votre demande, nous revenons vers vous rapidement.</p>
+
+          <!-- ════════════════════════════════════════════════════════
+               FORMULAIRE — Web3Forms  ·  formulaire actif
+               Les messages arrivent sur l'adresse configurée dans le
+               compte Web3Forms. Pour changer de destinataire, modifiez
+               la clé "access_key" ci-dessous (voir README.md).
+               ════════════════════════════════════════════════════════ -->
+          <form id="formulaire-contact" class="formulaire" novalidate>
+
+            <input type="hidden" name="access_key" value="f8724eeb-4a29-442d-af21-bfc69deead43" />
+            <input type="hidden" name="subject" value="Nouvelle demande depuis birdhunter65.fr" />
+            <input type="hidden" name="from_name" value="Site Bird Hunter 65" />
+
+            <!-- Piège à robots : ne pas remplir, invisible pour les visiteurs -->
+            <input type="checkbox" name="botcheck" class="pot-de-miel" tabindex="-1" autocomplete="off" />
+
+            <div class="champ-double">
+              <div class="champ">
+                <label for="nom">Nom et prénom <span class="requis">*</span></label>
+                <input type="text" id="nom" name="name" autocomplete="name" required />
+              </div>
+              <div class="champ">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="Téléphone" autocomplete="tel" inputmode="tel" />
+              </div>
+            </div>
+
+            <div class="champ">
+              <label for="email">Adresse e-mail <span class="requis">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+
+            <div class="champ">
+              <label for="formule">Quelle formule vous intéresse ?</label>
+              <select id="formule" name="Formule souhaitée">
+                <option value="">Je ne sais pas encore</option>
+                <option value="Chasse Journée &amp; Demi-journée">Chasse Journée &amp; Demi-journée</option>
+                <option value="Action de Chasse Annuelle">Action de Chasse Annuelle</option>
+                <option value="Week-end Bird Hunter">Week-end Bird Hunter</option>
+                <option value="Entraînement Chiens">Entraînement Chiens</option>
+                <option value="Chasse au Migrateur">Chasse au Migrateur</option>
+                <option value="Chasse à l’Approche">Chasse à l’Approche</option>
+              </select>
+            </div>
+
+            <div class="champ">
+              <label for="message">Votre message <span class="requis">*</span></label>
+              <textarea id="message" name="message" rows="6"
+                        placeholder="Nombre de chasseurs, dates envisagées, questions…" required></textarea>
+            </div>
+
+            <div id="form-message" class="form-message" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn-principal">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+              Envoyer ma demande
+            </button>
+
+            <p class="form-mention">
+              Les informations transmises servent uniquement à répondre à votre demande.
+              Voir nos <a href="mentions-legales.html">mentions légales</a>.
+            </p>
+
+          </form>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
-  <section id="contact" class="contact">
-    <div class="container contact-wrapper fade-in">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.7135289273624!2d0.2829830749918566!3d43.18861698235657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a9cbe0061fe1f5%3A0x3dc95c683987c353!2sBird%20Hunter!5e1!3m2!1sfr!2sfr!4v1753882761629!5m2!1sfr!2sfr" width="600" height="450" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</main>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     PIED DE PAGE
+     ═══════════════════════════════════════════════════════════════════════ -->
+<footer class="pied">
+  <div class="container">
+    <div class="pied-grille">
+
+      <div>
+        <div class="pied-logo">
+          <img src="imagesbirdhunter/logo.jpg" alt="Logo Bird Hunter" width="56" height="56" loading="lazy" />
+          <span class="nom">Bird Hunter</span>
+        </div>
+        <p>Domaine de chasse privée au petit gibier, sur 120 hectares à Tournay, dans les Hautes-Pyrénées.</p>
+        <div class="reseaux">
+          <a href="https://www.facebook.com/people/Bird-Hunter/61558949325470/" target="_blank" rel="noopener" aria-label="Page Facebook de Bird Hunter">
+            <img src="imagesbirdhunter/facebook.png" alt="" width="24" height="24" loading="lazy" />
+          </a>
+        </div>
       </div>
-      <div class="form-area">
-       <div class="contact-card">
-  <h3>Contactez-nous</h3>
-  <p>Pour toute question, devis ou réservation : <br>
-    <strong>appelez-nous</strong> sur le numéro ci-dessous ou <strong>écrivez-nous</strong> par e-mail. (Hésitez pas à le copier-coller 😉)
-  </p>
 
-  <div class="contact-buttons">
-    <a class="btn-call" href="tel:+33609276288" aria-label="Appeler Bird Hunter">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 3a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
-      Appeler : 06 09 27 62 88
-    </a>
+      <div>
+        <h4>Nous joindre</h4>
+        <p>Chem. de la Lande<br />65190 Tournay</p>
+        <p><a href="tel:+33609276288">06 09 27 62 88</a></p>
+        <p><a href="mailto:birdhunterdu65@gmail.com">birdhunterdu65@gmail.com</a></p>
+      </div>
 
-    <a class="btn-mail" href="mailto:birdhunterdu65@gmail.com" aria-label="Écrire un email à Bird Hunter">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
-      Écrire : birdhunterdu65@gmail.com
-    </a>
+      <div>
+        <h4>Le site</h4>
+        <ul class="pied-liens">
+          <li><a href="#domaine">Le Domaine</a></li>
+          <li><a href="#offres">Nos Offres</a></li>
+          <li><a href="#bergerie">Bergerie</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pied-bas">
+      <span>&copy; <span data-annee></span> Bird Hunter - Domaine de Chasse Privée</span>
+      <span class="sep">•</span>
+      <a href="https://caza-comm.fr" target="_blank" rel="noopener">Réalisé par <b>CAZA COMM</b></a>
+    </div>
   </div>
+</footer>
 
-  <!-- Alternatives universelles (ouvre le webmail si l'appli n’est pas installée) -->
-  <div class="alt-mail">
-    <a href="https://mail.google.com/mail/?view=cm&to=birdhunterdu65@gmail.com" target="_blank" rel="noopener">Ouvrir Gmail Web</a>
-    <a href="https://outlook.office.com/mail/deeplink/compose?to=birdhunterdu65@gmail.com" target="_blank" rel="noopener">Ouvrir Outlook Web</a>
-  </div>
 
-  <!-- Note d’excuse (fermant) -->
-  <div class="note-alert" id="note-outage">
-    <button class="note-close" aria-label="Fermer l’information" type="button">×</button>
-    <strong>Information importante :</strong> en raison d’un incident technique, toute demande envoyée entre le <strong>26 septembre</strong> et le <strong>30 octobre</strong> n’a pas été transmise.  
-    Si vous êtes concerné(e), merci de <strong>nous renvoyer votre message</strong> ou de <strong>nous appeler directement</strong>.  
-    Toutes nos excuses pour la gêne occasionnée.
-  </div>
-
-  <div class="coords-big">
-    <p><strong>📍 Chem. de la Lande, 65190 Tournay</strong></p>
-    <p><strong>📞 <a href="tel:+33609276288">06 09 27 62 88</a></strong></p>
-    <p><strong>✉️ <a href="mailto:birdhunterdu65@gmail.com">birdhunterdu65@gmail.com</a></strong></p>
-  </div>
+<!-- Barre d'appel fixe (téléphone uniquement) -->
+<div class="barre-appel">
+  <a href="tel:+33609276288" class="btn btn-principal">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 3a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
+    Appeler
+  </a>
+  <a href="#contact" class="btn btn-clair">Nous écrire</a>
 </div>
-    </div>
-  </section>
 
-  <!-- ===== Footer ===== -->
-  <footer>
-    <div class="container footer-content">
-      <p>&copy; <span id="year"></span> Bird Hunter - Domaine de Chasse Privée <span class="sep">•</span> <a class="madeby" href="https://caza-comm.fr" target="_blank" rel="noopener">Réalisé par <b>CAZA COMM</b></a></p>
-      <div class="footer-links">
-        <a href="mentions-legales.html">Mentions légales</a>
-         <a href="https://www.facebook.com/people/Bird-Hunter/61558949325470/" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
-    <img src="imagesbirdhunter/facebook.png" alt="Facebook" class="social-ico" width="24" height="24"></a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // ===== Smooth scroll avec offset pour header fixe =====
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', e => {
-        const href = anchor.getAttribute('href');
-        if (!href || href === '#') return;
-        const target = document.querySelector(href);
-        if (!target) return;
-        e.preventDefault();
-        const headerOffset = 70;
-        const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - headerOffset;
-        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-      });
-    });
-
-    // ===== Sticky header (si besoin d'une classe .sticky en CSS) =====
-    window.addEventListener('scroll', () => {
-      const header = document.querySelector('header');
-      if (!header) return;
-      header.classList.toggle('sticky', window.scrollY > 50);
-    });
-
-    // ===== Menu mobile =====
-    (function(){
-      const menuToggle = document.querySelector('.menu-toggle');
-      const nav = document.querySelector('header nav');
-      if (!menuToggle || !nav) return;
-      menuToggle.addEventListener('click', () => nav.classList.toggle('open'));
-      document.addEventListener('click', e => {
-        const isClickInsideMenu = nav.contains(e.target);
-        const isClickOnToggle = menuToggle.contains(e.target);
-        if (!isClickInsideMenu && !isClickOnToggle && nav.classList.contains('open')) nav.classList.remove('open');
-      });
-    })();
-
-    // ===== Fade-in on scroll =====
-    (function(){
-      const faders = document.querySelectorAll('.fade-in');
-      if (!('IntersectionObserver' in window)) { faders.forEach(el => el.classList.add('show')); return; }
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) { entry.target.classList.add('show'); observer.unobserve(entry.target); }
-        });
-      }, { threshold: 0.1 });
-      faders.forEach(el => observer.observe(el));
-    })();
-
-    // ===== Footer year =====
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // ===== Carrousel Avis (swipe natif + drag souris) =====
-    (function(){
-      const track = document.querySelector('.carousel-track');
-      const container = document.querySelector('.carousel-track-container');
-      if (!track || !container) return;
-
-      let currentIndex = 0;
-      const GAP = 20;
-
-      function cardWidth(){
-        const card = track.querySelector('.avis-card');
-        if (!card) return 0;
-        const style = window.getComputedStyle(card);
-        const w = card.getBoundingClientRect().width;
-        const ml = parseFloat(style.marginLeft)||0; const mr = parseFloat(style.marginRight)||0;
-        return w + ml + mr + GAP - 10;
-      }
-
-      function visibleCards(){
-        const cw = cardWidth();
-        if (!cw) return 1;
-        return Math.max(1, Math.floor(container.getBoundingClientRect().width / cw));
-      }
-
-      function maxIndex(){
-        const total = track.querySelectorAll('.avis-card').length;
-        return Math.max(0, total - visibleCards());
-      }
-
-      function updateCarousel(){
-        const translate = currentIndex * cardWidth();
-        track.style.transform = `translateX(-${translate}px)`;
-      }
-
-      // Drag souris (desktop)
-      let isDown = false, startX = 0, scrollLeft = 0;
-      container.addEventListener('mousedown', (e) => {
-        isDown = true;
-        container.classList.add('dragging');
-        startX = e.pageX - container.offsetLeft;
-        scrollLeft = container.scrollLeft;
-      });
-      container.addEventListener('mouseleave', () => { isDown = false; container.classList.remove('dragging'); });
-      container.addEventListener('mouseup', () => { isDown = false; container.classList.remove('dragging'); });
-      container.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - container.offsetLeft;
-        const walk = (x - startX);
-        container.scrollLeft = scrollLeft - walk;
-      });
-
-      // Mise à jour à la taille
-      window.addEventListener('resize', () => { currentIndex = Math.min(currentIndex, maxIndex()); updateCarousel(); });
-
-      // Sync index quand l'utilisateur scrolle
-      let scrollTimeout;
-      container.addEventListener('scroll', () => {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-          const cw = cardWidth(); if (!cw) return;
-          const idx = Math.round(container.scrollLeft / cw);
-          currentIndex = Math.min(Math.max(0, idx), maxIndex());
-        }, 80);
-      }, { passive: true });
-
-      // Init
-      updateCarousel();
-    })();
-  </script>
-  
-<script>
-  // Fermer la note d’excuse
-  (function(){
-    const n = document.getElementById('note-outage');
-    const b = n ? n.querySelector('.note-close') : null;
-    b && b.addEventListener('click', ()=> n.remove());
-  })();
-</script>
-
+<script src="assets/script.js" defer></script>
 
 </body>
 </html>

@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+
+# Fichiers techniques inutiles à l'indexation
+Disallow: /google46ece711eef0af3f.html
+
 Sitemap: https://birdhunter65.fr/sitemap.xml

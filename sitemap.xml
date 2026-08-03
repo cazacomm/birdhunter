@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://birdhunter65.fr/</loc>
-    <lastmod>2025-08-26</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/hero.jpg</image:loc>
+      <image:title>Domaine de chasse privée Bird Hunter à Tournay, Hautes-Pyrénées</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/bergerie-vue.jpg</image:loc>
+      <image:title>Vue aérienne de la bergerie et du domaine de chasse Bird Hunter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/domaine.jpg</image:loc>
+      <image:title>Bois de feuillus du domaine de chasse de 120 hectares</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/offre-journee.jpg</image:loc>
+      <image:title>Chasse au faisan à la journée à Tournay</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/offre-annuelle.jpg</image:loc>
+      <image:title>Chasse à la perdrix, action de chasse annuelle</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/offre-weekend.jpg</image:loc>
+      <image:title>Hébergement à la bergerie pour un week-end de chasse</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/offre-chien.jpg</image:loc>
+      <image:title>Entraînement de chien de chasse sur le domaine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/offre-migrateurs.jpg</image:loc>
+      <image:title>Chasse au migrateur, palombes et bécasses</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/offre-approche.jpg</image:loc>
+      <image:title>Chasse à l'approche du sanglier et du chevreuil</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://birdhunter65.fr/mentions-legales.html</loc>
-    <lastmod>2025-08-26</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
