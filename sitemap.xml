@@ -44,6 +44,22 @@
     </image:image>
   </url>
   <url>
+    <loc>https://birdhunter65.fr/blog/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://birdhunter65.fr/blog/chasse-petit-gibier-tournay-comprendre-le-terrain/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/domaine.jpg</image:loc>
+      <image:title>Bois de feuillus du domaine de chasse Bird Hunter à Tournay</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://birdhunter65.fr/mentions-legales.html</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>yearly</changefreq>

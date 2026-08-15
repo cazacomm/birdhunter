@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Le carnet de chasse Bird Hunter</title>
+    <link>https://birdhunter65.fr/blog/</link>
+    <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
+    <language>fr-FR</language>
+    <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
+    <lastBuildDate>Sat, 15 Aug 2026 08:00:00 +0200</lastBuildDate>
+    <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
+      <title>Le carnet de chasse Bird Hunter</title>
+      <link>https://birdhunter65.fr/blog/</link>
+    </image>
+
+    <item>
+      <title>Chasse au petit gibier à Tournay : apprendre à lire le terrain avant de partir</title>
+      <link>https://birdhunter65.fr/blog/chasse-petit-gibier-tournay-comprendre-le-terrain/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/chasse-petit-gibier-tournay-comprendre-le-terrain/</guid>
+      <pubDate>Sat, 15 Aug 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>Couverts, lisières, zones ouvertes et points d'eau : les quatre repères qui structurent un territoire de petit gibier, et ce qu'ils changent concrètement à une journée de chasse dans les Hautes-Pyrénées.</description>
+    </item>
+
+  </channel>
+</rss>

@@ -1,7 +1,71 @@
+# ============================================================
+# Bird Hunter 65 — birdhunter65.fr
+# Moteurs de recherche classiques + moteurs de réponse IA (GEO)
+# ============================================================
+
+# ---------- Règle par défaut ----------
 User-agent: *
 Allow: /
 
-# Fichiers techniques inutiles à l'indexation
+# ---------- Moteurs de recherche ----------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ---------- Moteurs de réponse / IA ----------
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# ---------- Fichiers techniques inutiles à l'indexation ----------
+User-agent: *
 Disallow: /google46ece711eef0af3f.html
 
+# ---------- Ressources ----------
 Sitemap: https://birdhunter65.fr/sitemap.xml
