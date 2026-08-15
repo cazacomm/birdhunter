@@ -1,0 +1,185 @@
+/* ==========================================================================
+   BIRD HUNTER 65 — Feuille de style du BLOG
+   Complément de assets/style.css (à charger APRÈS).
+   Aucune couleur nouvelle : tout réutilise les variables du site.
+
+     1. Mise en page générale du blog
+     2. En-tête de la rubrique
+     3. Grille des articles (cartes)
+     4. Fil d'Ariane
+     5. Page article
+     6. FAQ
+     7. Encadré de rappel (contact)
+     8. Responsive
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. MISE EN PAGE GÉNÉRALE
+   ========================================================================== */
+.page-blog{background:var(--creme);padding:clamp(2.5rem,6vw,4.5rem) 0}
+
+
+/* ==========================================================================
+   2. EN-TÊTE DE LA RUBRIQUE
+   ========================================================================== */
+.blog-entete{text-align:center;max-width:760px;margin:0 auto clamp(2.2rem,5vw,3.2rem)}
+.blog-entete .sur-titre{
+  display:inline-block;letter-spacing:.14em;text-transform:uppercase;
+  font-size:.82rem;font-weight:700;color:var(--ocre);margin-bottom:.9rem;
+}
+.blog-entete h1{margin-bottom:1rem}
+.blog-entete p{color:var(--gris);font-size:1.06rem}
+.blog-entete::after{
+  content:"";display:block;width:74px;height:4px;border-radius:2px;
+  background:var(--ocre);margin:1.6rem auto 0;
+}
+
+
+/* ==========================================================================
+   3. GRILLE DES ARTICLES
+   Reprend l'esprit des cartes « offres » de la page d'accueil.
+   ========================================================================== */
+.blog-grille{
+  display:grid;gap:1.9rem;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));
+}
+
+.blog-carte{
+  display:flex;flex-direction:column;overflow:hidden;
+  background:#fff;border-radius:var(--radius);
+  box-shadow:var(--ombre);border:1px solid rgba(66,77,45,.1);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.blog-carte:hover{transform:translateY(-5px);box-shadow:var(--ombre-forte)}
+
+.blog-carte-image{position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--creme-2)}
+.blog-carte-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.blog-carte:hover .blog-carte-image img{transform:scale(1.05)}
+
+.blog-carte-corps{display:flex;flex-direction:column;flex:1;padding:1.6rem 1.5rem 1.7rem}
+.blog-carte-meta{
+  font-size:.86rem;color:var(--gris);letter-spacing:.05em;text-transform:uppercase;
+  font-weight:600;margin-bottom:.8rem;
+}
+.blog-carte-corps h2{font-size:clamp(1.25rem,2.6vw,1.55rem);margin-bottom:.9rem}
+.blog-carte-corps h2 a{color:var(--vert)}
+.blog-carte-corps h2 a:hover{color:var(--ocre)}
+.blog-carte-corps p{color:#33372A;font-size:1rem;margin-bottom:1.4rem}
+.blog-carte-corps .btn{margin-top:auto;align-self:flex-start}
+
+/* Message affiché quand la rubrique ne contient encore qu'un article */
+.blog-note{
+  margin-top:clamp(2.2rem,5vw,3.2rem);text-align:center;
+  color:var(--gris);font-size:1rem;
+}
+
+
+/* ==========================================================================
+   4. FIL D'ARIANE
+   ========================================================================== */
+.fil-ariane{font-size:.92rem;color:var(--gris);margin-bottom:1.6rem}
+.fil-ariane ol{display:flex;flex-wrap:wrap;gap:.4rem .6rem;list-style:none}
+.fil-ariane a{color:var(--vert);text-decoration:underline;text-underline-offset:3px}
+.fil-ariane a:hover{color:var(--ocre)}
+.fil-ariane li+li::before{content:"›";margin-right:.6rem;opacity:.55}
+.fil-ariane [aria-current="page"]{color:var(--gris)}
+
+
+/* ==========================================================================
+   5. PAGE ARTICLE
+   Même carte blanche que la page Mentions légales, pour rester cohérent.
+   ========================================================================== */
+.article-page .container{max-width:880px}
+
+.article-carte{
+  background:#fff;border-radius:var(--radius);
+  padding:clamp(1.6rem,4vw,2.8rem);
+  box-shadow:var(--ombre);border:1px solid rgba(66,77,45,.1);
+}
+
+.article-entete{margin-bottom:2rem}
+.article-entete h1{font-size:clamp(1.9rem,4.6vw,2.9rem);margin-bottom:1rem}
+.article-meta{
+  display:flex;flex-wrap:wrap;gap:.4rem .9rem;align-items:center;
+  color:var(--gris);font-size:.94rem;
+}
+.article-meta .sep{opacity:.4}
+
+.article-image{margin:0 0 2rem}
+.article-image img{width:100%;border-radius:var(--radius);box-shadow:var(--ombre)}
+.article-image figcaption{
+  margin-top:.7rem;font-size:.9rem;color:var(--gris);text-align:center;
+}
+
+.article-chapo{
+  font-size:1.12rem;color:#33372A;font-weight:600;
+  border-left:4px solid var(--ocre);
+  background:var(--creme);
+  border-radius:0 12px 12px 0;
+  padding:1.1rem 1.3rem;margin-bottom:2rem;
+}
+
+.article-corps h2{
+  font-size:clamp(1.4rem,3.2vw,1.9rem);
+  margin:2.4rem 0 1rem;padding-top:1.6rem;
+  border-top:1px solid rgba(66,77,45,.14);
+}
+.article-corps h2:first-child{margin-top:0;padding-top:0;border-top:0}
+.article-corps h3{font-size:clamp(1.15rem,2.4vw,1.35rem);margin:1.8rem 0 .8rem}
+.article-corps p{color:#33372A}
+.article-corps a{color:var(--vert);text-decoration:underline;text-underline-offset:3px}
+.article-corps a:hover{color:var(--ocre)}
+
+.article-corps ul.liste{margin:0 0 1.2rem;padding:0}
+.article-corps ul.liste li{
+  position:relative;padding-left:1.7rem;margin-bottom:.6rem;color:#33372A;
+}
+.article-corps ul.liste li::before{
+  content:"";position:absolute;left:0;top:.62em;
+  width:9px;height:9px;border-radius:50%;background:var(--ocre);
+}
+
+
+/* ==========================================================================
+   6. FAQ
+   ========================================================================== */
+.faq-bloc{margin-top:2.6rem}
+.faq-bloc h2{
+  font-size:clamp(1.4rem,3.2vw,1.9rem);
+  margin:0 0 1.4rem;padding-top:1.6rem;
+  border-top:1px solid rgba(66,77,45,.14);
+}
+.faq-item{
+  background:var(--creme);border-radius:12px;
+  padding:1.2rem 1.35rem;margin-bottom:1rem;
+  border:1px solid rgba(66,77,45,.1);
+}
+.faq-item h3{margin:0 0 .6rem;font-size:1.12rem}
+.faq-item p{margin:0;color:#33372A;font-size:1rem}
+
+
+/* ==========================================================================
+   7. ENCADRÉ DE RAPPEL (contact)
+   ========================================================================== */
+.article-cta{
+  margin-top:2.6rem;padding:clamp(1.5rem,4vw,2rem);
+  background:var(--vert);color:#fff;border-radius:var(--radius);
+  text-align:center;
+}
+.article-cta h2{color:#fff;margin:0 0 .8rem;padding:0;border:0;font-size:clamp(1.3rem,3vw,1.7rem)}
+.article-cta p{color:#E3E9D6;margin-bottom:1.5rem}
+.article-cta .groupe-btn{justify-content:center}
+
+.article-retour{margin-top:2rem;text-align:center}
+.article-retour a{color:var(--vert);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.article-retour a:hover{color:var(--ocre)}
+
+
+/* ==========================================================================
+   8. RESPONSIVE
+   ========================================================================== */
+@media (max-width:600px){
+  .article-cta .groupe-btn .btn{width:100%}
+  .article-corps h2{margin-top:2rem;padding-top:1.3rem}
+}
