@@ -1,0 +1,95 @@
+name: Blog — article automatique
+
+# Publie un article par semaine, le lundi à 9 h UTC (11 h en France l'été,
+# 10 h l'hiver). Déclenchable aussi à la main depuis l'onglet Actions.
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Test à blanc (n'écrit rien, ne publie rien)"
+        type: boolean
+        default: false
+      topic:
+        description: "Forcer un numéro de sujet (laisser vide pour le suivant)"
+        type: string
+        default: ""
+
+# Le job pousse un commit sur main : il lui faut le droit d'écriture.
+permissions:
+  contents: write
+
+# Deux exécutions simultanées écriraient dans les mêmes fichiers.
+concurrency:
+  group: blog-auto
+  cancel-in-progress: false
+
+jobs:
+  generer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dépendances
+        run: pip install --quiet openai
+
+      - name: Générer l'article
+        id: generation
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          set +e
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ -n "${{ inputs.topic }}" ]; then ARGS="$ARGS --topic ${{ inputs.topic }}"; fi
+
+          python3 scripts/generate-article.py $ARGS
+          CODE=$?
+          echo "code=$CODE" >> "$GITHUB_OUTPUT"
+
+          # 0  = article généré        → on publie
+          # 78 = plus aucun sujet      → succès sans publication
+          # 1  = erreur                → le job échoue, rien n'est poussé
+          case $CODE in
+            0)  echo "publier=true"  >> "$GITHUB_OUTPUT" ;;
+            78) echo "publier=false" >> "$GITHUB_OUTPUT"
+                echo "::notice::Tous les sujets de BLOG_WORKFLOW.md ont été publiés. Ajoutez des lignes au tableau pour relancer la production." ;;
+            *)  echo "publier=false" >> "$GITHUB_OUTPUT"
+                echo "::error::Génération échouée (code $CODE) — aucun fichier modifié."
+                exit $CODE ;;
+          esac
+
+      - name: Publier l'article
+        if: steps.generation.outputs.publier == 'true' && inputs.dry_run != true
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "::notice::Aucune modification à publier."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(blog): article auto du $(date -u +%Y-%m-%d)"
+          git push
+          echo "::notice::Article publié. GitHub Pages met le site à jour en 1 à 2 minutes."
+
+      - name: Récapitulatif
+        if: always()
+        run: |
+          echo "### Blog — article automatique" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Code de sortie du script : \`${{ steps.generation.outputs.code }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Code | Signification |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|---|---|" >> "$GITHUB_STEP_SUMMARY"
+          echo "| 0 | Article généré et publié |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| 78 | Aucun sujet restant — rien à publier |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| 1 | Erreur — aucun fichier modifié |" >> "$GITHUB_STEP_SUMMARY"
