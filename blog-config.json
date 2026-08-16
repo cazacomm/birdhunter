@@ -1,0 +1,68 @@
+{
+  "site_slug": "birdhunter65",
+  "site_name": "Bird Hunter 65",
+  "site_url": "https://birdhunter65.fr",
+  "sector": "domaine de chasse privée au petit gibier",
+  "location": "Tournay, Hautes-Pyrénées",
+  "geo_keywords": [
+    "Tournay",
+    "65190",
+    "Hautes-Pyrénées",
+    "65",
+    "Tarbes",
+    "Lannemezan",
+    "Bagnères-de-Bigorre",
+    "Pau",
+    "Auch",
+    "Occitanie",
+    "Sud-Ouest",
+    "piémont pyrénéen"
+  ],
+  "tone": "expert-conseil, factuel, chaleureux, sans jargon inutile",
+  "author": "Bird Hunter - Romain Corroyer",
+  "target_word_count": 1300,
+  "faq_questions_count": 5,
+  "language": "fr",
+
+  "template_article": "blog/chasse-petit-gibier-tournay-comprendre-le-terrain/index.html",
+  "blog_dir": "blog",
+  "blog_index": "blog/index.html",
+  "workflow_doc": "BLOG_WORKFLOW.md",
+  "sitemap": "sitemap.xml",
+  "rss": "rss.xml",
+  "llms": "llms.txt",
+
+  "openai_model": "gpt-4o-mini",
+  "openai_temperature": 0.7,
+
+  "image_pool": [
+    "imagesbirdhunter/bird4.jpg",
+    "imagesbirdhunter/bird5.jpg",
+    "imagesbirdhunter/bird6.jpg",
+    "imagesbirdhunter/bird7.jpg",
+    "imagesbirdhunter/bird8.jpg",
+    "imagesbirdhunter/bird9.jpg",
+    "imagesbirdhunter/bird10.jpg",
+    "imagesbirdhunter/bird16.jpg",
+    "imagesbirdhunter/organisation.jpg",
+    "imagesbirdhunter/bergerie.jpg",
+    "imagesbirdhunter/offre-journee.jpg",
+    "imagesbirdhunter/offre-chien.jpg"
+  ],
+
+  "facts_allowed": [
+    "Domaine de 120 hectares à Tournay (65190), Hautes-Pyrénées, à 15 minutes de Tarbes",
+    "Bois de feuillus, pinèdes, plaines, clairières et sources naturelles",
+    "Chasse au petit gibier : faisan, perdreau, et selon les périodes le lapin",
+    "Sorties en effectif limité, jusqu'à 8 fusils selon les formules",
+    "Hébergement sur place à la bergerie, formule week-end en pension complète",
+    "Action de chasse annuelle et demi-action",
+    "Entraînement de chiens de chasse de juin à septembre, parc dédié de 3 hectares",
+    "Chasse au migrateur (palombe, bécasse) de décembre à février",
+    "Chasse à l'approche (chevreuil, sanglier) de juin à octobre, accompagnée d'un garde",
+    "Postes aménagés pour personnes à mobilité réduite, parking privé",
+    "Permis de chasser en cours de validité et assurance responsabilité civile chasse obligatoires",
+    "Réservation nécessaire, adresse exacte communiquée à la réservation",
+    "Téléphone 06 09 27 62 88, e-mail birdhunterdu65@gmail.com"
+  ]
+}
