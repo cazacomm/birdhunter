@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Sat, 15 Aug 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>Entraînement au parc : clé de la réussite cynégétique</title>
+      <link>https://birdhunter65.fr/blog/entrainement-chien-chasse-avant-ouverture/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/entrainement-chien-chasse-avant-ouverture/</guid>
+      <pubDate>Fri, 21 Aug 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>Chaque année, de nombreux chasseurs des Hautes-Pyrénées se demandent comment optimiser la performance de leur chien avant l'ouverture de la chasse au petit gibier. Dans le piémont pyrénéen, préparer son compagnon à quatre pattes est essentiel pour une saison réussie. Le domaine de Bird Hunter 65, situé à Tournay, propose un parc d'entraînement de 3 hectares qui devient une étape incontournable de juin à septembre.</description>
+    </item>
 
     <item>
       <title>Chasse au petit gibier à Tournay : apprendre à lire le terrain avant de partir</title>

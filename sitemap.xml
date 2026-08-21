@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://birdhunter65.fr/blog/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -64,5 +64,15 @@
     <lastmod>2026-08-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://birdhunter65.fr/blog/entrainement-chien-chasse-avant-ouverture/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird4.jpg</image:loc>
+      <image:title>Un chien de chasse courant dans un champ à la poursuite d'un faisan.</image:title>
+    </image:image>
   </url>
 </urlset>
