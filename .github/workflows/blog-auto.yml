@@ -11,8 +11,8 @@ on:
         description: "Test à blanc (n'écrit rien, ne publie rien)"
         type: boolean
         default: false
-      topic:
-        description: "Forcer un numéro de sujet (laisser vide pour le suivant)"
+      rewrite:
+        description: "Réécrire un article existant : saisir son slug (laisser vide sinon)"
         type: string
         default: ""
 
@@ -49,7 +49,7 @@ jobs:
           set +e
           ARGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
-          if [ -n "${{ inputs.topic }}" ]; then ARGS="$ARGS --topic ${{ inputs.topic }}"; fi
+          if [ -n "${{ inputs.rewrite }}" ]; then ARGS="$ARGS --rewrite ${{ inputs.rewrite }}"; fi
 
           python3 scripts/generate-article.py $ARGS
           CODE=$?
@@ -77,7 +77,11 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "chore(blog): article auto du $(date -u +%Y-%m-%d)"
+          if [ -n "${{ inputs.rewrite }}" ]; then
+            git commit -m "chore(blog): réécriture de ${{ inputs.rewrite }} du $(date -u +%Y-%m-%d)"
+          else
+            git commit -m "chore(blog): article auto du $(date -u +%Y-%m-%d)"
+          fi
           git push
           echo "::notice::Article publié. GitHub Pages met le site à jour en 1 à 2 minutes."
 
