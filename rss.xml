@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 24 Aug 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>Chasser le faisan et le perdreau, deux approches distinctes</title>
+      <link>https://birdhunter65.fr/blog/faisan-perdreau-differences-chasse/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/faisan-perdreau-differences-chasse/</guid>
+      <pubDate>Mon, 31 Aug 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>À l'arrivée de l'automne, le domaine de chasse de Tournay dans les Hautes-Pyrénées devient le terrain de jeu idéal pour les passionnés de chasse au petit gibier. Que vous soyez un amateur de faisan ou de perdreau, chaque gibier offre ses propres défis et techniques de chasse. Dans cet article, nous vous dévoilons les spécificités de ces deux gibiers et comment optimiser vos sorties dans le Sud-Ouest.</description>
+    </item>
 
     <item>
       <title>Découvrez la chasse à deux pas de Tarbes</title>

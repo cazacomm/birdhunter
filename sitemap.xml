@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://birdhunter65.fr/blog/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -83,6 +83,16 @@
     <image:image>
       <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird5.jpg</image:loc>
       <image:title>Chasseur dans une clairière du domaine de Tournay</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://birdhunter65.fr/blog/faisan-perdreau-differences-chasse/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird6.jpg</image:loc>
+      <image:title>Chasseur avec son chien dans un champ, prêt à chasser le faisan ou le perdreau.</image:title>
     </image:image>
   </url>
 </urlset>
