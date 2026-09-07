@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 31 Aug 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>Une journée de chasse réussie entre amis</title>
+      <link>https://birdhunter65.fr/blog/organiser-journee-chasse-entre-amis-65/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/organiser-journee-chasse-entre-amis-65/</guid>
+      <pubDate>Mon, 07 Sep 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>Imaginez une journée d'automne dans les Hautes-Pyrénées, entouré de vos amis et de la nature sauvage. Organiser une journée de chasse dans ce cadre idyllique est l'occasion rêvée de partager des moments inoubliables. À Tournay, le domaine de chasse privée Bird Hunter 65 vous propose une expérience unique de chasse au petit gibier, alliant convivialité et passion pour la nature.</description>
+    </item>
 
     <item>
       <title>Chasser le faisan et le perdreau, deux approches distinctes</title>
