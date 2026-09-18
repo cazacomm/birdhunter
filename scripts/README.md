@@ -1,8 +1,9 @@
 # Génération automatique d'articles
 
 Un article de blog est rédigé et publié **chaque lundi à 9 h UTC** (11 h en France
-l'été, 10 h l'hiver), sans intervention. Le sujet est pris dans le tableau des
-12 sujets de [`BLOG_WORKFLOW.md`](../BLOG_WORKFLOW.md), dans l'ordre.
+l'été, 10 h l'hiver), sans intervention. Le sujet est pris dans le tableau de
+[`BLOG_WORKFLOW.md`](../BLOG_WORKFLOW.md), dans l'ordre — et **ce tableau se
+réapprovisionne tout seul** quand il se vide (voir section 10).
 
 | Fichier | Rôle |
 |---|---|
@@ -58,6 +59,9 @@ Onglet **Actions → Blog — article automatique → Run workflow**. Deux optio
   le sujet grâce au marqueur du fichier, régénère l'article, écrase la page et
   resynchronise le teaser dans `blog/index.html` et dans `rss.xml`.
 
+Le réapprovisionnement de la réserve de sujets est **ignoré** dans ces deux cas :
+un test à blanc et une réécriture ne consomment pas de sujet.
+
 ### En local
 
 ```bash
@@ -67,7 +71,11 @@ export OPENAI_API_KEY="sk-..."
 python3 scripts/generate-article.py --dry-run    # aperçu, rien n'est écrit
 python3 scripts/generate-article.py              # génère et écrit les fichiers
 python3 scripts/generate-article.py --rewrite mon-slug   # régénère un article
+python3 scripts/generate-article.py --topics-only        # réserve de sujets seule
 ```
+
+`--topics-only` et `--rewrite` sont incompatibles et le script le refuse
+explicitement : le premier ne rédige aucun article, le second en réécrit un.
 
 Sans clé API, pour vérifier uniquement la mécanique (gabarit, JSON-LD, sitemap,
 RSS) avec du texte factice :
@@ -201,13 +209,51 @@ Les minutes GitHub Actions sont gratuites sur un dépôt public.
 
 ---
 
-## 10. Quand les 12 sujets sont épuisés
+## 10. La réserve de sujets se remplit toute seule
 
-Le workflow sortira en `78` chaque lundi, sans rien publier ni casser.
-Pour relancer la production, ajoutez des lignes au tableau de la section
-**« Douze sujets d'articles prêts à écrire »** de `BLOG_WORKFLOW.md`, en gardant
-exactement le même format :
+Avant chaque rédaction, le script compte les sujets **non traités** du tableau de
+`BLOG_WORKFLOW.md`. S'il en reste moins de 8, il en génère 40 de plus, les ajoute
+à la fin du tableau et les committe — puis rédige l'article de la semaine.
+
+| Réglage | Valeur |
+|---|---|
+| Seuil de déclenchement | **8** sujets non traités (`TOPIC_RESERVE_MIN`) |
+| Taille d'un lot | **40** sujets (`TOPIC_BATCH`) |
+| Appels OpenAI par lot | **2** au maximum (`TOPIC_MAX_CALLS`) |
+| Modèle | `gpt-4o` (`TOPICS_MODEL`) |
+
+Un deuxième appel n'a lieu que si le premier n'a pas suffi une fois les doublons
+écartés. À 40 sujets par lot et un article par semaine, un lot couvre environ
+dix mois : le coût est marginal.
+
+### Ce qui garantit qu'on ne réécrit jamais deux fois le même article
+
+`topic_is_pending()` est la **définition unique** d'un sujet non traité, utilisée
+à la fois pour compter la réserve et pour choisir le sujet à rédiger. Les deux ne
+peuvent donc pas diverger.
+
+La **déduplication porte sur le slug**, pas sur le titre : c'est le slug qui
+nomme le dossier de l'article, donc c'est lui la clé d'idempotence. Deux titres
+différents qui produiraient le même dossier sont écartés.
+
+### L'ordre des étapes du workflow
+
+Le réapprovisionnement tourne **avant** la rédaction, et son commit est **poussé
+avant** elle. Si la rédaction échoue ensuite, le lot de sujets déjà produit reste
+acquis sur le remote — on ne repaie jamais deux fois la même génération.
+
+Inversement, une panne du réapprovisionnement ne bloque **jamais** la
+publication : elle passe en `::warning::` dans le journal, et l'article est
+rédigé avec la réserve existante.
+
+### Ajouter des sujets à la main
+
+Toujours possible, à la fin du tableau, en gardant exactement le format local :
 
 ```
-| 13 | Titre du nouveau sujet | `slug-du-nouveau-sujet` | période |
+| 53 | Titre du nouveau sujet | `slug-du-nouveau-sujet` | période |
 ```
+
+Le slug des sujets générés automatiquement est calculé à partir du titre ; il est
+écrit dans la troisième colonne parce que c'est la convention de ce fichier et que
+la relecture du tableau l'exige.

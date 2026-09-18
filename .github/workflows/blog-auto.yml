@@ -41,6 +41,48 @@ jobs:
       - name: Installer les dépendances
         run: pip install --quiet openai
 
+      - name: Identité git
+        # Placée ici, avant le réapprovisionnement : le commit des sujets en a
+        # besoin. L'étape de publication finale s'appuie sur la même identité.
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Réapprovisionnement des sujets
+        # Ignoré en test à blanc et en réécriture : dans ces deux cas on ne
+        # consomme pas la réserve, donc rien à reconstituer.
+        if: inputs.dry_run != true && inputs.rewrite == ''
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          set +e
+          python3 scripts/generate-article.py --topics-only
+          CODE=$?
+          if [ $CODE -ne 0 ]; then
+            echo "::warning::Réapprovisionnement des sujets échoué (code $CODE). Le job continue avec la réserve existante."
+          fi
+          exit 0
+
+      - name: Push des nouveaux sujets
+        # Poussé AVANT la rédaction : si l'article échoue ensuite, le lot de
+        # sujets déjà produit reste acquis sur le remote.
+        if: inputs.dry_run != true && inputs.rewrite == ''
+        run: |
+          set +e
+          git fetch origin "${{ github.ref_name }}" --quiet
+          AHEAD=$(git rev-list --count "origin/${{ github.ref_name }}..HEAD" 2>/dev/null || echo 0)
+          if [ "$AHEAD" = "0" ]; then
+            echo "::notice::Aucun nouveau sujet à pousser."
+            exit 0
+          fi
+          git push origin "HEAD:${{ github.ref_name }}"
+          if [ $? -ne 0 ]; then
+            echo "::warning::Push des sujets échoué. Le job continue."
+          else
+            echo "::notice::$AHEAD commit(s) de sujets poussé(s)."
+          fi
+          exit 0
+
       - name: Générer l'article
         id: generation
         env:
@@ -74,8 +116,6 @@ jobs:
             echo "::notice::Aucune modification à publier."
             exit 0
           fi
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if [ -n "${{ inputs.rewrite }}" ]; then
             git commit -m "chore(blog): réécriture de ${{ inputs.rewrite }} du $(date -u +%Y-%m-%d)"

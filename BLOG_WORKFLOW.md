@@ -141,9 +141,13 @@ https://birdhunter65.fr/
 
 ---
 
-## 5. Douze sujets d'articles prêts à écrire
+## 5. Sujets d'articles prêts à écrire
 
 Classés dans un ordre qui suit la saison. Chacun est ancré local + métier.
+
+> Ce tableau s'allonge tout seul : quand il reste moins de 8 sujets non traités,
+> le robot en génère 40 de plus avant de rédiger. Vous pouvez bien sûr en ajouter
+> à la main — gardez simplement le format exact des lignes ci-dessous.
 
 | # | Sujet | Slug proposé | Bonne période |
 |---|---|---|---|
