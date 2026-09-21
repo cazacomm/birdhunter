@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 14 Sep 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>Préparez-vous pour la chasse au piémont pyrénéen</title>
+      <link>https://birdhunter65.fr/blog/equipement-journee-chasse-piemont-pyreneen/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/equipement-journee-chasse-piemont-pyreneen/</guid>
+      <pubDate>Mon, 21 Sep 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>Chasser dans le piémont pyrénéen est une expérience unique qui nécessite une préparation minutieuse. Entre l'humidité, le dénivelé et les caprices de la météo, il est essentiel de bien s'équiper pour profiter pleinement de votre journée. Que vous soyez un habitué des lieux ou un visiteur occasionnel, cet article vous guide pour choisir le bon matériel et les vêtements adaptés à une chasse dans les Hautes-Pyrénées, autour de Tournay.</description>
+    </item>
 
     <item>
       <title>Sécurité en action de chasse</title>
