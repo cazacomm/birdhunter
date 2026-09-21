@@ -163,6 +163,46 @@ Classés dans un ordre qui suit la saison. Chacun est ancré local + métier.
 | 10 | Chasse à l'approche du chevreuil et du sanglier : le silence comme méthode | `chasse-approche-chevreuil-sanglier-65` | juin – octobre |
 | 11 | Chasser quand on est à mobilité réduite : ce que permet un domaine aménagé | `chasse-accessible-mobilite-reduite-domaine` | toute l'année |
 | 12 | Un domaine de 120 hectares au fil des saisons : ce que la nature change au terrain | `domaine-120-hectares-au-fil-des-saisons` | fin de saison |
+| 13 | Comment préparer votre chien pour une chasse au faisan à Tournay | `comment-preparer-chien-chasse-faisan-tournay` | août - septembre |
+| 14 | Les meilleures périodes pour chasser le perdreau autour de Lannemezan | `meilleures-periodes-chasser-perdreau-autour-lannemezan` | septembre - novembre |
+| 15 | Guide pour choisir le bon fusil pour la chasse au petit gibier en Occitanie | `guide-choisir-bon-fusil-chasse-petit-gibier` | toute l'année |
+| 16 | Découvrir les spécificités de la chasse en domaine privé dans les Hautes-Pyrénées | `decouvrir-specificites-chasse-domaine-prive-hautes-pyrenees` | toute l'année |
+| 17 | Planifier une journée de chasse en famille dans le piémont pyrénéen | `planifier-journee-chasse-famille-piemont-pyreneen` | octobre - novembre |
+| 18 | Comparatif des munitions pour la chasse au faisan dans le Sud-Ouest | `comparatif-munitions-chasse-faisan-sud-ouest` | toute l'année |
+| 19 | Les avantages d'une chasse privée près de Pau : confort et exclusivité | `avantages-chasse-privee-pres-pau-confort-exclusivite` | toute l'année |
+| 20 | Pourquoi choisir un domaine de chasse à Tournay pour des journées sportives | `pourquoi-choisir-domaine-chasse-tournay-journees-sportives` | avril - juin |
+| 21 | Les erreurs à éviter lors de votre première chasse au petit gibier à Bagnères-de-Bigorre | `erreurs-eviter-lors-premiere-chasse-petit-gibier` | septembre - octobre |
+| 22 | Consignes pour une chasse sécurisée dans les Hautes-Pyrénées | `consignes-chasse-securisee-hautes-pyrenees` | toute l'année |
+| 23 | Comment la météo influence-t-elle la chasse au petit gibier à Tarbes ? | `comment-meteo-influence-t-chasse-petit-gibier` | toute l'année |
+| 24 | Coulisses d'une journée de chasse organisée dans un domaine privé à Tournay | `coulisses-journee-chasse-organisee-domaine-prive-tournay` | toute l'année |
+| 25 | Les bienfaits de la chasse pour le bien-être : focus sur le domaine de chasse de 65 | `bienfaits-chasse-etre-focus-domaine-chasse-65` | toute l'année |
+| 26 | Les meilleures pratiques pour préserver l'environnement lors d'une chasse en Occitanie | `meilleures-pratiques-preserver-environnement-lors-chasse-occitanie` | toute l'année |
+| 27 | Comment optimiser votre équipement pour la chasse en terrain vallonné à Auch | `comment-optimiser-equipement-chasse-terrain-vallonne-auch` | septembre - novembre |
+| 28 | Découverte de la chasse aux faisans : une aventure unique dans le piémont pyrénéen | `decouverte-chasse-faisans-aventure-unique-piemont-pyreneen` | octobre - novembre |
+| 29 | Les spécificités de la chasse au perdreau dans les Hautes-Pyrénées | `specificites-chasse-perdreau-hautes-pyrenees` | septembre - novembre |
+| 30 | Conseils pour une chasse réussie en domaine privé près de Pau | `conseils-chasse-reussie-domaine-prive-pres-pau` | toute l'année |
+| 31 | Choisir le bon chien pour la chasse au petit gibier à Tournay | `choisir-bon-chien-chasse-petit-gibier-tournay` | toute l'année |
+| 32 | Préparation physique pour une journée de chasse dans les collines de Lannemezan | `preparation-physique-journee-chasse-collines-lannemezan` | juin - août |
+| 33 | Les critères pour sélectionner un domaine de chasse dans le Sud-Ouest | `criteres-selectionner-domaine-chasse-sud-ouest` | toute l'année |
+| 34 | Chasse et traditions locales : immersion dans les pratiques pyrénéennes | `chasse-traditions-locales-immersion-pratiques-pyreneennes` | toute l'année |
+| 35 | Les équipements indispensables pour une chasse au petit gibier à Tarbes | `equipements-indispensables-chasse-petit-gibier-tarbes` | octobre - décembre |
+| 36 | Pourquoi les Hautes-Pyrénées sont idéales pour la chasse au petit gibier ? | `pourquoi-hautes-pyrenees-sont-ideales-chasse-petit` | toute l'année |
+| 37 | Organiser un événement de chasse professionnel dans le domaine de Bird Hunter 65 | `organiser-evenement-chasse-professionnel-domaine-bird-hunter` | toute l'année |
+| 38 | Les défis de la chasse en altitude : conseils pour les chasseurs à Bagnères-de-Bigorre | `defis-chasse-altitude-conseils-chasseurs-bagneres-bigorre` | octobre - novembre |
+| 39 | Comment le changement de saison affecte-t-il la chasse au faisan à Tournay ? | `comment-changement-saison-affecte-t-chasse-faisan` | toute l'année |
+| 40 | Les avantages d'une chasse en petit comité dans le piémont pyrénéen | `avantages-chasse-petit-comite-piemont-pyreneen` | toute l'année |
+| 41 | Visite guidée des installations de chasse à Bird Hunter 65 | `visite-guidee-installations-chasse-bird-hunter-65` | toute l'année |
+| 42 | L'impact des conditions météorologiques sur la chasse au petit gibier à Pau | `impact-conditions-meteorologiques-chasse-petit-gibier-pau` | toute l'année |
+| 43 | Que faire après une journée de chasse réussie à Tournay ? | `faire-apres-journee-chasse-reussie-tournay` | toute l'année |
+| 44 | Les meilleures astuces pour repérer le petit gibier dans les Hautes-Pyrénées | `meilleures-astuces-reperer-petit-gibier-hautes-pyrenees` | octobre - décembre |
+| 45 | Pourquoi choisir les Hautes-Pyrénées pour une chasse au faisan inoubliable ? | `pourquoi-choisir-hautes-pyrenees-chasse-faisan-inoubliable` | toute l'année |
+| 46 | Les bénéfices d'une chasse écoresponsable dans le domaine de Bird Hunter 65 | `benefices-chasse-ecoresponsable-domaine-bird-hunter-65` | toute l'année |
+| 47 | Comment bien gérer un groupe de chasseurs en domaine privé à Tournay | `comment-gerer-groupe-chasseurs-domaine-prive-tournay` | toute l'année |
+| 48 | Les différents types de gibier à découvrir dans le domaine de Bird Hunter 65 | `differents-types-gibier-decouvrir-domaine-bird-hunter` | toute l'année |
+| 49 | Les techniques traditionnelles de chasse au perdreau dans le Sud-Ouest | `techniques-traditionnelles-chasse-perdreau-sud-ouest` | septembre - novembre |
+| 50 | Pourquoi la chasse en Occitanie est une expérience unique pour les passionnés | `pourquoi-chasse-occitanie-experience-unique-passionnes` | toute l'année |
+| 51 | Les clés pour une chasse réussie au faisan dans les collines pyrénéennes | `cles-chasse-reussie-faisan-collines-pyreneennes` | septembre - novembre |
+| 52 | Le rôle de l'écosystème local dans la préservation du petit gibier à Tournay | `role-ecosysteme-local-preservation-petit-gibier-tournay` | toute l'année |
 
 **Rythme conseillé :** un article par mois. Mieux vaut 12 bons articles par an
 que 30 articles bâclés — Google mesure la qualité, pas le volume.
