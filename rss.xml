@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 21 Sep 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>Plongez dans un week-end de chasse exceptionnel</title>
+      <link>https://birdhunter65.fr/blog/week-end-chasse-hebergement-bergerie/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/week-end-chasse-hebergement-bergerie/</guid>
+      <pubDate>Mon, 28 Sep 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>Imaginez-vous en plein cœur des Hautes-Pyrénées, sur un domaine de chasse privée, à Tournay. Dès votre arrivée, vous êtes plongé dans une atmosphère authentique et conviviale. Votre week-end de chasse débute par un accueil chaleureux, suivi d'une immersion dans la nature luxuriante du domaine. Ce séjour vous promet des moments intenses, entre chasse au petit gibier et moments de détente à la bergerie. Prêt à vivre une aventure inoubliable ?</description>
+    </item>
 
     <item>
       <title>Préparez-vous pour la chasse au piémont pyrénéen</title>

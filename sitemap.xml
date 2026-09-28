@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://birdhunter65.fr/blog/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -123,6 +123,16 @@
     <image:image>
       <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird9.jpg</image:loc>
       <image:title>Chasseur équipé dans les bois du piémont pyrénéen</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://birdhunter65.fr/blog/week-end-chasse-hebergement-bergerie/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird10.jpg</image:loc>
+      <image:title>Chasseur avec son chien dans une clairière verdoyante des Hautes-Pyrénées</image:title>
     </image:image>
   </url>
 </urlset>
