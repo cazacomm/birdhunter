@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 28 Sep 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>Chasse au migrateur : palombe et bécasse</title>
+      <link>https://birdhunter65.fr/blog/chasse-migrateur-palombe-becasse-65/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/chasse-migrateur-palombe-becasse-65/</guid>
+      <pubDate>Mon, 05 Oct 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>En plein cœur des Hautes-Pyrénées, la saison hivernale offre aux chasseurs l'occasion unique de s'adonner à la chasse au migrateur. De décembre à février, notre domaine privé à Tournay devient le théâtre de deux attentes distinctes : la chasse à la palombe et celle à la bécasse. Ces espèces, bien que partageant le même territoire, offrent des expériences de chasse aux singularités marquées.</description>
+    </item>
 
     <item>
       <title>Plongez dans un week-end de chasse exceptionnel</title>

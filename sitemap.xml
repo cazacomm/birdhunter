@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://birdhunter65.fr/blog/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -133,6 +133,16 @@
     <image:image>
       <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird10.jpg</image:loc>
       <image:title>Chasseur avec son chien dans une clairière verdoyante des Hautes-Pyrénées</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://birdhunter65.fr/blog/chasse-migrateur-palombe-becasse-65/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird16.jpg</image:loc>
+      <image:title>Chasseur dans une clairière enneigée avec son chien de chasse</image:title>
     </image:image>
   </url>
 </urlset>
