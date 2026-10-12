@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://birdhunter65.fr/blog/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -143,6 +143,16 @@
     <image:image>
       <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird16.jpg</image:loc>
       <image:title>Chasseur dans une clairière enneigée avec son chien de chasse</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://birdhunter65.fr/blog/debuter-chasse-petit-gibier-conseils/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/organisation.jpg</image:loc>
+      <image:title>Chasseur marchant avec un chien dans un champ en automne</image:title>
     </image:image>
   </url>
 </urlset>

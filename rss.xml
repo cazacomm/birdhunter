@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 05 Oct 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>Conseils pour débuter la chasse au petit gibier</title>
+      <link>https://birdhunter65.fr/blog/debuter-chasse-petit-gibier-conseils/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/debuter-chasse-petit-gibier-conseils/</guid>
+      <pubDate>Mon, 12 Oct 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>Vous êtes passionné par la chasse et souhaitez débuter dans le petit gibier ? Le domaine de chasse privée à Tournay, dans les Hautes-Pyrénées, offre un cadre idéal pour s’initier. Que vous soyez débutant ou que vous cherchiez à peaufiner vos compétences, notre terrain de 120 hectares vous réserve de belles surprises. Découvrez nos conseils pour une première expérience réussie et inoubliable.</description>
+    </item>
 
     <item>
       <title>Chasse au migrateur : palombe et bécasse</title>
