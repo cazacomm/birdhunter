@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 12 Oct 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>La chasse silencieuse du chevreuil et sanglier</title>
+      <link>https://birdhunter65.fr/blog/chasse-approche-chevreuil-sanglier-65/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/chasse-approche-chevreuil-sanglier-65/</guid>
+      <pubDate>Mon, 19 Oct 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>Au cœur du piémont pyrénéen, la chasse à l'approche du chevreuil et du sanglier est un art qui se pratique en silence. Entre juin et octobre, les passionnés se retrouvent au domaine de chasse privé de Tournay. Ce cadre exceptionnel, à deux pas de Tarbes, offre une expérience immersive où la discrétion et la patience sont les maîtres mots. Prêts à explorer les bois de feuillus et les clairières à la recherche de gibiers majestueux ?</description>
+    </item>
 
     <item>
       <title>Conseils pour débuter la chasse au petit gibier</title>

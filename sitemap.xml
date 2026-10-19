@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://birdhunter65.fr/blog/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -153,6 +153,16 @@
     <image:image>
       <image:loc>https://birdhunter65.fr/imagesbirdhunter/organisation.jpg</image:loc>
       <image:title>Chasseur marchant avec un chien dans un champ en automne</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://birdhunter65.fr/blog/chasse-approche-chevreuil-sanglier-65/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/bergerie.jpg</image:loc>
+      <image:title>Chasseur en tenue camouflée observant la forêt environnante</image:title>
     </image:image>
   </url>
 </urlset>
