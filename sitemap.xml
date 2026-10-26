@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://birdhunter65.fr/blog/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -163,6 +163,16 @@
     <image:image>
       <image:loc>https://birdhunter65.fr/imagesbirdhunter/bergerie.jpg</image:loc>
       <image:title>Chasseur en tenue camouflée observant la forêt environnante</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://birdhunter65.fr/blog/chasse-accessible-mobilite-reduite-domaine/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/offre-journee.jpg</image:loc>
+      <image:title>Personne à mobilité réduite chassant dans un domaine boisé</image:title>
     </image:image>
   </url>
 </urlset>

@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 19 Oct 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>Chasser avec mobilité réduite : notre domaine vous accueille</title>
+      <link>https://birdhunter65.fr/blog/chasse-accessible-mobilite-reduite-domaine/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/chasse-accessible-mobilite-reduite-domaine/</guid>
+      <pubDate>Mon, 26 Oct 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>Dans le piémont pyrénéen, à Tournay, Bird Hunter 65 propose une expérience de chasse unique, pensée pour les personnes à mobilité réduite. Avec des installations dédiées et un accompagnement personnalisé, ce domaine de chasse privée permet à tous les passionnés de petit gibier de vivre des moments intenses en pleine nature. L'accessibilité est au cœur de notre démarche, pour que chacun puisse profiter des plaisirs de la chasse au faisan et au perdreau.</description>
+    </item>
 
     <item>
       <title>La chasse silencieuse du chevreuil et sanglier</title>
