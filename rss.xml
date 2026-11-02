@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 26 Oct 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>La Nature au Fil des Saisons</title>
+      <link>https://birdhunter65.fr/blog/domaine-120-hectares-au-fil-des-saisons/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/domaine-120-hectares-au-fil-des-saisons/</guid>
+      <pubDate>Mon, 02 Nov 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>À Tournay, dans les Hautes-Pyrénées, le domaine de chasse Bird Hunter 65 s'étend sur 120 hectares de paysages variés. Chaque saison y dessine de nouveaux décors et influence la faune locale. Que vous soyez amateur de chasse au petit gibier ou simplement amoureux de la nature, découvrez comment le changement des saisons transforme ce coin de paradis pyrénéen.</description>
+    </item>
 
     <item>
       <title>Chasser avec mobilité réduite : notre domaine vous accueille</title>
