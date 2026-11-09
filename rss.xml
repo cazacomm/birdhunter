@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>Préparez votre chien pour la chasse au faisan</title>
+      <link>https://birdhunter65.fr/blog/comment-preparer-chien-chasse-faisan-tournay/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/comment-preparer-chien-chasse-faisan-tournay/</guid>
+      <pubDate>Mon, 09 Nov 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>Dans le piémont pyrénéen, la chasse au faisan est une activité prisée qui demande une préparation minutieuse, notamment pour votre chien. À Tournay, dans les Hautes-Pyrénées, le domaine Bird Hunter 65 vous offre un cadre idéal pour affiner les compétences de votre compagnon à quatre pattes. Entraîner votre chien dans ces paysages variés, entre bois et plaines, peut faire toute la différence pour une sortie réussie.</description>
+    </item>
 
     <item>
       <title>La Nature au Fil des Saisons</title>

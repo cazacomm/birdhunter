@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://birdhunter65.fr/blog/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -183,6 +183,16 @@
     <image:image>
       <image:loc>https://birdhunter65.fr/imagesbirdhunter/offre-chien.jpg</image:loc>
       <image:title>Un paysage automnal du domaine de chasse avec des arbres aux couleurs chatoyantes.</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://birdhunter65.fr/blog/comment-preparer-chien-chasse-faisan-tournay/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird4.jpg</image:loc>
+      <image:title>Un chien de chasse en entraînement dans un champ à Tournay</image:title>
     </image:image>
   </url>
 </urlset>
