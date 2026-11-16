@@ -6,13 +6,22 @@
     <description>Conseils et retours de terrain sur la chasse au petit gibier à Tournay, dans les Hautes-Pyrénées : territoire, chiens, saisons, organisation d'une journée.</description>
     <language>fr-FR</language>
     <copyright>Bird Hunter - Domaine de Chasse Privée</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://birdhunter65.fr/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://birdhunter65.fr/imagesbirdhunter/logo.jpg</url>
       <title>Le carnet de chasse Bird Hunter</title>
       <link>https://birdhunter65.fr/blog/</link>
     </image>
+
+    <item>
+      <title>Les meilleures périodes pour chasser le perdreau</title>
+      <link>https://birdhunter65.fr/blog/meilleures-periodes-chasser-perdreau-autour-lannemezan/</link>
+      <guid isPermaLink="true">https://birdhunter65.fr/blog/meilleures-periodes-chasser-perdreau-autour-lannemezan/</guid>
+      <pubDate>Mon, 16 Nov 2026 08:00:00 +0200</pubDate>
+      <category>Chasse au petit gibier</category>
+      <description>À l'approche de l'automne, les chasseurs de petit gibier des Hautes-Pyrénées se préparent à traquer le perdreau. Niché entre Tarbes et Lannemezan, le domaine de chasse privée à Tournay offre un cadre idéal pour cette activité prisée. Avec son mélange de bois, plaines et clairières, il attire chaque année de nombreux passionnés désireux de vivre une expérience authentique en Occitanie.</description>
+    </item>
 
     <item>
       <title>Préparez votre chien pour la chasse au faisan</title>
