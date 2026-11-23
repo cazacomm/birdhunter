@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://birdhunter65.fr/blog/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -203,6 +203,16 @@
     <image:image>
       <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird5.jpg</image:loc>
       <image:title>Chasseur avec un fusil dans une clairière automnale à Tournay</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://birdhunter65.fr/blog/guide-choisir-bon-fusil-chasse-petit-gibier/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://birdhunter65.fr/imagesbirdhunter/bird6.jpg</image:loc>
+      <image:title>Chasseur avec fusil en plein cœur des Hautes-Pyrénées</image:title>
     </image:image>
   </url>
 </urlset>
